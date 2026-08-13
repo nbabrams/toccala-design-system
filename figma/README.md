@@ -11,7 +11,7 @@ Run the setup once per Figma file. After that, Claude binds to real variables in
 | File | What it is |
 | --- | --- |
 | `variables.json` | Four Variable collections — `Toccala/Color` (12 palette + 8 off-palette literals + 20 semantic aliases), `Toccala/Spacing`, `Toccala/Radius`, `Toccala/Type` |
-| `text-styles.json` | All 20 rows of the source type system, plus 5 extra named styles (step numeral, price, plan label, micro label, small script) and the one Effect Style |
+| `text-styles.json` | The type ladder (21 rows after the H3 insertion), plus 5 extra named styles (step numeral, price, plan label, micro label, small script) and the one Effect Style |
 | `setup-plugin/` | A Figma plugin that creates everything above in one run. Idempotent — re-run to update |
 | `components.md` | Per-component build recipe: auto-layout direction, exact padding, which variable binds where. Plus the five section recipes |
 
@@ -28,7 +28,7 @@ The setup plugin **skips any text style whose font isn't available** and lists w
 | **Seaweed Script** | Google Fonts — available in Figma by default |
 | **Inter** | Available in Figma by default |
 
-Optima Condensed carries the whole heading scale (Display → H4), so if it's missing, everything looks wrong rather than slightly off.
+Optima Condensed carries the whole heading scale (Display → H5), so if it's missing, everything looks wrong rather than slightly off.
 
 ## Step 2 — Run the setup plugin
 
@@ -37,7 +37,7 @@ Optima Condensed carries the whole heading scale (Display → H4), so if it's mi
 3. Choose `figma/setup-plugin/manifest.json`.
 4. Menu → **Plugins → Development → Toccala DS Setup**.
 
-It creates the four Variable collections, 25 Text Styles and the `Elevation/Card` Effect Style, then reports what it made in the console. Takes a few seconds.
+It creates the four Variable collections, 26 Text Styles and the `Elevation/Card` Effect Style, then reports what it made in the console. Takes a few seconds.
 
 > Web-only? The plugin needs the desktop app to load from a manifest. Alternatively hand `variables.json` and `text-styles.json` to any Variables-import plugin, or paste `setup-plugin/code.js` into a scratch plugin.
 

@@ -1,4 +1,4 @@
-/* @ds-bundle: {"format":4,"namespace":"ToccalaDesignSystem_316ada","components":[{"name":"FeatureItem","sourcePath":"components/cards/FeatureItem.jsx"},{"name":"PlanCard","sourcePath":"components/cards/PlanCard.jsx"},{"name":"Button","sourcePath":"components/core/Button.jsx"},{"name":"Divider","sourcePath":"components/core/Divider.jsx"},{"name":"Kicker","sourcePath":"components/core/Kicker.jsx"},{"name":"ScriptAccent","sourcePath":"components/core/ScriptAccent.jsx"},{"name":"TextLink","sourcePath":"components/core/TextLink.jsx"},{"name":"Wordmark","sourcePath":"components/core/Wordmark.jsx"},{"name":"AccentCircle","sourcePath":"components/decor/AccentCircle.jsx"},{"name":"SketchRing","sourcePath":"components/decor/SketchRing.jsx"},{"name":"TexturePanel","sourcePath":"components/decor/TexturePanel.jsx"},{"name":"UnderlineSwoosh","sourcePath":"components/decor/UnderlineSwoosh.jsx"}],"sourceHashes":{"components/cards/FeatureItem.jsx":"607d5e5b7212","components/cards/PlanCard.jsx":"bb5ca112803c","components/core/Button.jsx":"053b1b07f528","components/core/Divider.jsx":"5a010f781d1d","components/core/Kicker.jsx":"ba704c2ec8a0","components/core/ScriptAccent.jsx":"35e59f2a73a0","components/core/TextLink.jsx":"2a7e516bc1b6","components/core/Wordmark.jsx":"9e7aad8efeb8","components/decor/AccentCircle.jsx":"0d81b7533e83","components/decor/SketchRing.jsx":"41d39ed67635","components/decor/TexturePanel.jsx":"22156f9b7dbd","components/decor/UnderlineSwoosh.jsx":"c0310f3c8256","figma/setup-plugin/code.js":"1b3fd75554eb","ui_kits/brand-canvas/fonts-colors-band.jsx":"c2407c2d206c","ui_kits/brand-canvas/header.jsx":"a4f1ad1c7bc0","ui_kits/brand-canvas/hero.jsx":"76429e25f9cf","ui_kits/brand-canvas/offer-band.jsx":"418f95c54c80","ui_kits/brand-canvas/statement.jsx":"c166bb8955e8"},"inlinedExternals":[],"unexposedExports":[]} */
+/* @ds-bundle: {"format":4,"namespace":"ToccalaDesignSystem_316ada","components":[{"name":"FeatureItem","sourcePath":"components/cards/FeatureItem.jsx"},{"name":"PlanCard","sourcePath":"components/cards/PlanCard.jsx"},{"name":"Button","sourcePath":"components/core/Button.jsx"},{"name":"Divider","sourcePath":"components/core/Divider.jsx"},{"name":"Kicker","sourcePath":"components/core/Kicker.jsx"},{"name":"ScriptAccent","sourcePath":"components/core/ScriptAccent.jsx"},{"name":"TextLink","sourcePath":"components/core/TextLink.jsx"},{"name":"Wordmark","sourcePath":"components/core/Wordmark.jsx"},{"name":"AccentCircle","sourcePath":"components/decor/AccentCircle.jsx"},{"name":"SketchRing","sourcePath":"components/decor/SketchRing.jsx"},{"name":"TexturePanel","sourcePath":"components/decor/TexturePanel.jsx"},{"name":"UnderlineSwoosh","sourcePath":"components/decor/UnderlineSwoosh.jsx"}],"sourceHashes":{"components/cards/FeatureItem.jsx":"607d5e5b7212","components/cards/PlanCard.jsx":"bb5ca112803c","components/core/Button.jsx":"73188ad2fa0e","components/core/Divider.jsx":"5a010f781d1d","components/core/Kicker.jsx":"2e08a35aeafa","components/core/ScriptAccent.jsx":"35e59f2a73a0","components/core/TextLink.jsx":"2a7e516bc1b6","components/core/Wordmark.jsx":"9e7aad8efeb8","components/decor/AccentCircle.jsx":"0d81b7533e83","components/decor/SketchRing.jsx":"41d39ed67635","components/decor/TexturePanel.jsx":"22156f9b7dbd","components/decor/UnderlineSwoosh.jsx":"c0310f3c8256","figma/setup-plugin/code.js":"1624cfba2a50","ui_kits/brand-canvas/fonts-colors-band.jsx":"c2407c2d206c","ui_kits/brand-canvas/header.jsx":"a4f1ad1c7bc0","ui_kits/brand-canvas/hero.jsx":"1aeb4283be50","ui_kits/brand-canvas/offer-band.jsx":"418f95c54c80","ui_kits/brand-canvas/statement.jsx":"c166bb8955e8"},"inlinedExternals":[],"unexposedExports":[]} */
 
 (() => {
 
@@ -51,7 +51,7 @@ function _extends() { return _extends = Object.assign ? Object.assign.bind() : f
 const SIZES = {
   md: {
     padding: "18px 38px",
-    fontSize: 16
+    fontSize: 18
   },
   lg: {
     padding: "18px 38px",
@@ -162,7 +162,7 @@ const TONES = {
   label: {
     fontFamily: "var(--font-display)",
     fontWeight: 600,
-    fontSize: 14,
+    fontSize: 18,
     letterSpacing: "3px",
     color: "var(--text-kicker)",
     textTransform: "uppercase"
@@ -555,7 +555,7 @@ const VARIABLES = {
       "name": "Palette/Clay",
       "type": "COLOR",
       "value": "#D76B45",
-      "description": "Feature bullets, large background disc. NOT accent buttons — see Semantic/Accent."
+      "description": "Accent buttons, feature bullets, large background disc."
     }, {
       "name": "Palette/Sun",
       "type": "COLOR",
@@ -688,8 +688,7 @@ const VARIABLES = {
     }, {
       "name": "Semantic/Accent",
       "type": "COLOR",
-      "alias": "Palette/Brick",
-      "description": "Brick, not Clay — Clay fails contrast for button labels."
+      "alias": "Palette/Clay"
     }, {
       "name": "Semantic/Action Solid",
       "type": "COLOR",
@@ -918,7 +917,7 @@ const STYLES = {
     "name": "Display/Desktop",
     "fontFamily": "Optima nova LT Pro",
     "fontStyle": "Medium Condensed",
-    "fontSize": 132,
+    "fontSize": 112,
     "lineHeight": {
       "unit": "PERCENT",
       "value": 110
@@ -983,7 +982,7 @@ const STYLES = {
     "name": "Heading/H3 Desktop",
     "fontFamily": "Optima nova LT Pro",
     "fontStyle": "Medium Condensed",
-    "fontSize": 40,
+    "fontSize": 48,
     "lineHeight": {
       "unit": "PERCENT",
       "value": 110
@@ -996,7 +995,7 @@ const STYLES = {
     "name": "Heading/H3 Mobile",
     "fontFamily": "Optima nova LT Pro",
     "fontStyle": "Medium Condensed",
-    "fontSize": 32,
+    "fontSize": 36,
     "lineHeight": {
       "unit": "PERCENT",
       "value": 110
@@ -1006,7 +1005,20 @@ const STYLES = {
       "value": 0
     }
   }, {
-    "name": "Heading/H4",
+    "name": "Heading/H4 Desktop",
+    "fontFamily": "Optima nova LT Pro",
+    "fontStyle": "Medium Condensed",
+    "fontSize": 40,
+    "lineHeight": {
+      "unit": "PERCENT",
+      "value": 110
+    },
+    "letterSpacing": {
+      "unit": "PIXELS",
+      "value": 0
+    }
+  }, {
+    "name": "Heading/H4 Mobile",
     "fontFamily": "Optima nova LT Pro",
     "fontStyle": "Medium Condensed",
     "fontSize": 32,
@@ -1017,13 +1029,12 @@ const STYLES = {
     "letterSpacing": {
       "unit": "PIXELS",
       "value": 0
-    },
-    "note": "Desktop & mobile."
+    }
   }, {
     "name": "Heading/H5",
     "fontFamily": "Optima nova LT Pro",
-    "fontStyle": "Medium",
-    "fontSize": 22,
+    "fontStyle": "Medium Condensed",
+    "fontSize": 32,
     "lineHeight": {
       "unit": "PERCENT",
       "value": 120
@@ -1032,12 +1043,12 @@ const STYLES = {
       "unit": "PIXELS",
       "value": 0
     },
-    "note": "Regular width, not condensed."
+    "note": "Joins the condensed ladder. Was 22 regular-width before the rescale."
   }, {
     "name": "Heading/H6 Eyebrow",
     "fontFamily": "Optima nova LT Pro",
     "fontStyle": "Demi",
-    "fontSize": 14,
+    "fontSize": 18,
     "lineHeight": {
       "unit": "PERCENT",
       "value": 120
@@ -1047,7 +1058,7 @@ const STYLES = {
       "value": 3
     },
     "textCase": "UPPER",
-    "note": "Kicker label. Colour: Semantic/Text Kicker."
+    "note": "Kicker label. Colour: Semantic/Text Kicker. Raised from 14 for legibility."
   }, {
     "name": "Lead/Desktop",
     "fontFamily": "Wix Madefor Text",
@@ -1673,8 +1684,8 @@ function Hero() {
     style: {
       fontFamily: "var(--font-display-cond)",
       fontWeight: 500,
-      fontSize: 132,
-      lineHeight: "110px",
+      fontSize: 112,
+      lineHeight: "123px",
       color: "var(--text-primary)",
       textWrap: "balance",
       alignSelf: "stretch"

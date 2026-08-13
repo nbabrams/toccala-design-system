@@ -74,12 +74,12 @@ Only four ground/ink pairings are legal — see the **Semantic pairings** card. 
 ### Type
 Three faces, three jobs, no exceptions.
 
-- **Display: Optima nova LT Pro**. Headline sizes Display→H4 (132 / 72 / 56 / 48 / 42 / 40 / 32) are set in the **Medium Condensed** cut — `--font-display-cond` — which is what the source file uses; The price (54) and the 120px step numerals are condensed too; H5 (22) and the H6 eyebrow (14, Demi) use the regular width via `--font-display`. Flared humanist stems, tight `1.1` leading at display sizes.
-- **Text: Wix Madefor Text** (Medium 500 mostly, SemiBold 600 for micro-labels). All body copy, buttons, links, feature lines. Leading `1.4`. Scale: 24 / 20 / 18 / 16 / 14 / 12.
+- **Display: Optima nova LT Pro**. The whole heading ladder Display→H5 — **112 / 72 / 56 / 48 / 40 / 32** desktop, **48 / 42 / 36 / 32** mobile — is set in the **Medium Condensed** cut (`--font-display-cond`), which is what the source file uses. The price (54) and the 120px step numerals are condensed too. Only the **H6 eyebrow (18, Demi)** uses the regular width via `--font-display`. Flared humanist stems, tight `1.1` leading at display sizes.
+- **Text: Wix Madefor Text** (Medium 500 mostly, SemiBold 600 for micro-labels). All body copy, buttons, links, feature lines. Leading `1.4`. Scale: 24 / 20 / 18 / 16 / 14 / 12. **Every button label is 18** (Body L) at every size.
 - **Script: Seaweed Script** (Regular 400, 24–34px). Accents only. Never a heading, never body.
 - **Inter** appears in a supporting role only: the muted body block on the green statement band. (The 120px step numerals are Optima nova LT Pro Condensed — the source reconstruction read them as Inter, corrected here.)
 
-Headlines are set flush left, mostly on one line, and allowed to be enormous relative to the column (132px headline over a 520px subhead). Letter-spacing is default everywhere *except* caps labels (`3px` / `2.5px`) and the big numerals (`-2%`).
+Headlines are set flush left and allowed to be enormous relative to the column (112px headline over a 520px subhead). Letter-spacing is default everywhere *except* caps labels (`3px` / `2.5px`) and the big numerals (`-2%`).
 
 ### Spacing & layout
 1440px fixed container. Hero gutter 64px; the dark bands use a 96px gutter and 90/110px vertical padding; the textured band uses 112px vertical. Section gaps are large and irregular by design — 153px between the plan card and the step column, 239px inside it. **Values are fractional and were kept fractional** (361.511, 606.532, 349.315, 391.862). Do not round them to a grid; the source has no grid.

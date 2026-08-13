@@ -12,7 +12,7 @@ Component set, one variant property `Variant = Primary | Secondary | Accent` and
 - Frame, **horizontal** auto-layout, `Center` / `Center`, gap `Gap/12`.
 - Corner radius → `Radius/Pill` (999). **Never** a squared button.
 - Padding: `md` and `lg` = `18` top/bottom, `38` left/right. `card` = `16` / `34`.
-- Label text style: `md` → `Body/S` (16). `lg` and `card` → `Body/M Desktop` (18).
+- Label text style: **`Body/L Mobile` (18) on all three sizes.** Buttons never drop to 16.
 - Fills / strokes:
   - **Primary** — fill `Semantic/Action Solid` (Pine), label `Semantic/Action Solid Ink` (Sand).
   - **Secondary** — no fill, **inside stroke** `Stroke/Rule` (1.5) in `Semantic/Action Outline`, label same. A real stroke, not an inner shadow.
@@ -26,7 +26,7 @@ Two variants, `Tone = Light | Dark`. Text node, underlined, with a trailing `→
 
 ## Kicker
 Four variants, `Tone = Label | Plan | Dark | Hero`. Text node only.
-- **Label** — `Heading/H6 Eyebrow` (14 Demi, 3px track, uppercase), `Semantic/Text Kicker`.
+- **Label** — `Heading/H6 Eyebrow` (**18** Demi, 3px track, uppercase), `Semantic/Text Kicker`.
 - **Plan** — `Label/Plan` (13 Wix Madefor, 2.5px track, uppercase), `Semantic/Text Plan Label`.
 - **Dark** — `Label/Micro` (13, 3px track), `Semantic/Text On Dark Soft`.
 - **Hero** — `24px` Optima Demi, uppercase, `Semantic/Text Primary`.
@@ -79,7 +79,7 @@ The source defines five section types. Build these as top-level frames at `Layou
 | Section | Height | Ground | Padding | Layout |
 | --- | --- | --- | --- | --- |
 | Header | `280.919` | `Semantic/Surface Page` | `81 / 0 / 64 / 0` | vertical, centred: plated wordmark + 18px Optima Bold caps line |
-| Hero | `873` | none (canvas shows) | `24 / 64` | vertical, gap `Gap/64`; inner copy column `582` wide, gap `Gap/53`; image `664 × 503` radius 16 |
+| Hero | `873` | none (canvas shows) | `24 / 64` | vertical, gap `Gap/64`; inner copy column `582` wide, gap `Gap/53`; `Display/Desktop` (112) headline; image `664 × 503` radius 16 |
 | Statement | `612` | `Semantic/Surface Dark` | none | horizontal, gap `Gap/96`; photo frame `656 × 612` with the image overflowing to `606.532 × 616.895`; copy column gap `Gap/36` |
 | Offer band | `1085` | texture tile | `112 / 0` | horizontal, gap `Gap/153`, align `Top`; plan card + step column `391.862` |
 | Footer | `405` | `Semantic/Surface Ink` | `90 / 96 / 110 / 96` | horizontal, gap `Gap/140`; font list `280` wide + swatch rows `632` wide, gap `Gap/18` / `Gap/16` |

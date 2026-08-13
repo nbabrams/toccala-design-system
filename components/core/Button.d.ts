@@ -4,9 +4,9 @@ import * as React from "react";
  * Pill button — the only button shape in the Toccala system.
  */
 export interface ButtonProps extends React.HTMLAttributes<HTMLElement> {
-  /** primary = deep green solid · secondary = 1.5px green outline · accent = terracotta solid */
+  /** primary = pine solid · secondary = 1.5px pine outline · accent = brick solid */
   variant?: "primary" | "secondary" | "accent";
-  /** md 18/38 @16px (hero pair) · lg 18/38 @18px (accent CTA) · card 16/34 @18px (plan card CTA) */
+  /** all label at 18px (Body L) · md 18/38 (hero pair) · lg 18/38 (accent CTA) · card 16/34 (plan card CTA) */
   size?: "md" | "lg" | "card";
   as?: keyof JSX.IntrinsicElements;
   href?: string;

@@ -29,7 +29,7 @@ const VARIABLES = {
           "name": "Palette/Clay",
           "type": "COLOR",
           "value": "#D76B45",
-          "description": "Feature bullets, large background disc. NOT accent buttons — see Semantic/Accent."
+          "description": "Accent buttons, feature bullets, large background disc."
         },
         {
           "name": "Palette/Sun",
@@ -191,8 +191,7 @@ const VARIABLES = {
         {
           "name": "Semantic/Accent",
           "type": "COLOR",
-          "alias": "Palette/Brick",
-          "description": "Brick, not Clay — Clay fails contrast for button labels."
+          "alias": "Palette/Clay"
         },
         {
           "name": "Semantic/Action Solid",
@@ -475,6 +474,7 @@ const VARIABLES = {
     }
   ]
 };
+
 const STYLES = {
   "$schema": "toccala-figma-text-styles/1",
   "note": "All 20 rows of the source Typography System frame. lineHeight is {unit:'PERCENT'|'PIXELS'}. Create via the Plugin API (figma.createTextStyle) — see figma/README.md.",
@@ -483,7 +483,7 @@ const STYLES = {
       "name": "Display/Desktop",
       "fontFamily": "Optima nova LT Pro",
       "fontStyle": "Medium Condensed",
-      "fontSize": 132,
+      "fontSize": 112,
       "lineHeight": {
         "unit": "PERCENT",
         "value": 110
@@ -553,7 +553,7 @@ const STYLES = {
       "name": "Heading/H3 Desktop",
       "fontFamily": "Optima nova LT Pro",
       "fontStyle": "Medium Condensed",
-      "fontSize": 40,
+      "fontSize": 48,
       "lineHeight": {
         "unit": "PERCENT",
         "value": 110
@@ -567,6 +567,34 @@ const STYLES = {
       "name": "Heading/H3 Mobile",
       "fontFamily": "Optima nova LT Pro",
       "fontStyle": "Medium Condensed",
+      "fontSize": 36,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 110
+      },
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      }
+    },
+    {
+      "name": "Heading/H4 Desktop",
+      "fontFamily": "Optima nova LT Pro",
+      "fontStyle": "Medium Condensed",
+      "fontSize": 40,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 110
+      },
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      }
+    },
+    {
+      "name": "Heading/H4 Mobile",
+      "fontFamily": "Optima nova LT Pro",
+      "fontStyle": "Medium Condensed",
       "fontSize": 32,
       "lineHeight": {
         "unit": "PERCENT",
@@ -578,25 +606,10 @@ const STYLES = {
       }
     },
     {
-      "name": "Heading/H4",
+      "name": "Heading/H5",
       "fontFamily": "Optima nova LT Pro",
       "fontStyle": "Medium Condensed",
       "fontSize": 32,
-      "lineHeight": {
-        "unit": "PERCENT",
-        "value": 110
-      },
-      "letterSpacing": {
-        "unit": "PIXELS",
-        "value": 0
-      },
-      "note": "Desktop & mobile."
-    },
-    {
-      "name": "Heading/H5",
-      "fontFamily": "Optima nova LT Pro",
-      "fontStyle": "Medium",
-      "fontSize": 22,
       "lineHeight": {
         "unit": "PERCENT",
         "value": 120
@@ -605,13 +618,13 @@ const STYLES = {
         "unit": "PIXELS",
         "value": 0
       },
-      "note": "Regular width, not condensed."
+      "note": "Joins the condensed ladder. Was 22 regular-width before the rescale."
     },
     {
       "name": "Heading/H6 Eyebrow",
       "fontFamily": "Optima nova LT Pro",
       "fontStyle": "Demi",
-      "fontSize": 14,
+      "fontSize": 18,
       "lineHeight": {
         "unit": "PERCENT",
         "value": 120
@@ -621,7 +634,7 @@ const STYLES = {
         "value": 3
       },
       "textCase": "UPPER",
-      "note": "Kicker label. Colour: Semantic/Text Kicker."
+      "note": "Kicker label. Colour: Semantic/Text Kicker. Raised from 14 for legibility."
     },
     {
       "name": "Lead/Desktop",

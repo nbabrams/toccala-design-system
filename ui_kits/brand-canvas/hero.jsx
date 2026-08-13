@@ -27,7 +27,7 @@ function Hero() {
             <div style={{ width: 582, overflow: "hidden", display: "flex", flexDirection: "column", gap: 53, alignItems: "flex-start", flexShrink: 0 }}>
               <div style={{ display: "flex", flexDirection: "column", gap: 16, alignItems: "flex-start", alignSelf: "stretch" }}>
                 <Kicker tone="label">Kicker label here</Kicker>
-                <h1 style={{ fontFamily: "var(--font-display-cond)", fontWeight: 500, fontSize: 132, lineHeight: "110px",
+                <h1 style={{ fontFamily: "var(--font-display-cond)", fontWeight: 500, fontSize: 112, lineHeight: "123px",
                   color: "var(--text-primary)", textWrap: "balance", alignSelf: "stretch" }}>Headline Text Here</h1>
                 <p style={{ width: 520, fontFamily: "var(--font-text)", fontWeight: 500, fontSize: 24, lineHeight: 1.2, color: "var(--text-primary)" }}>
                   A subhead sentence supporting the headline could look like this. A subhead sentence supporting the headline could look like this.

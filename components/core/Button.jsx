@@ -1,7 +1,7 @@
 import React from "react";
 
 const SIZES = {
-  md:   { padding: "18px 38px", fontSize: 16 },
+  md:   { padding: "18px 38px", fontSize: 18 },
   lg:   { padding: "18px 38px", fontSize: 18 },
   card: { padding: "16px 34px", fontSize: 18 },
 };
