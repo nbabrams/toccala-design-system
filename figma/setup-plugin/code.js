@@ -29,7 +29,7 @@ const VARIABLES = {
           "name": "Palette/Clay",
           "type": "COLOR",
           "value": "#D76B45",
-          "description": "Accent buttons, feature bullets, large background disc."
+          "description": "Feature bullets, large background disc. NOT accent buttons — see Semantic/Accent."
         },
         {
           "name": "Palette/Sun",
@@ -191,7 +191,8 @@ const VARIABLES = {
         {
           "name": "Semantic/Accent",
           "type": "COLOR",
-          "alias": "Palette/Clay"
+          "alias": "Palette/Brick",
+          "description": "Brick, not Clay — Parchment labels on Clay fail AA (3.05:1). On Brick: 4.73:1."
         },
         {
           "name": "Semantic/Action Solid",
@@ -486,7 +487,7 @@ const STYLES = {
       "fontSize": 112,
       "lineHeight": {
         "unit": "PERCENT",
-        "value": 110
+        "value": 100
       },
       "letterSpacing": {
         "unit": "PIXELS",
@@ -500,7 +501,7 @@ const STYLES = {
       "fontSize": 72,
       "lineHeight": {
         "unit": "PERCENT",
-        "value": 110
+        "value": 100
       },
       "letterSpacing": {
         "unit": "PIXELS",
@@ -514,7 +515,7 @@ const STYLES = {
       "fontSize": 48,
       "lineHeight": {
         "unit": "PERCENT",
-        "value": 110
+        "value": 100
       },
       "letterSpacing": {
         "unit": "PIXELS",
@@ -528,7 +529,7 @@ const STYLES = {
       "fontSize": 56,
       "lineHeight": {
         "unit": "PERCENT",
-        "value": 120
+        "value": 100
       },
       "letterSpacing": {
         "unit": "PIXELS",
@@ -542,7 +543,7 @@ const STYLES = {
       "fontSize": 42,
       "lineHeight": {
         "unit": "PERCENT",
-        "value": 110
+        "value": 100
       },
       "letterSpacing": {
         "unit": "PIXELS",
@@ -556,7 +557,7 @@ const STYLES = {
       "fontSize": 48,
       "lineHeight": {
         "unit": "PERCENT",
-        "value": 110
+        "value": 100
       },
       "letterSpacing": {
         "unit": "PIXELS",
@@ -570,7 +571,7 @@ const STYLES = {
       "fontSize": 36,
       "lineHeight": {
         "unit": "PERCENT",
-        "value": 110
+        "value": 100
       },
       "letterSpacing": {
         "unit": "PIXELS",
@@ -584,7 +585,7 @@ const STYLES = {
       "fontSize": 40,
       "lineHeight": {
         "unit": "PERCENT",
-        "value": 110
+        "value": 100
       },
       "letterSpacing": {
         "unit": "PIXELS",
@@ -598,7 +599,7 @@ const STYLES = {
       "fontSize": 32,
       "lineHeight": {
         "unit": "PERCENT",
-        "value": 110
+        "value": 100
       },
       "letterSpacing": {
         "unit": "PIXELS",
@@ -612,7 +613,7 @@ const STYLES = {
       "fontSize": 32,
       "lineHeight": {
         "unit": "PERCENT",
-        "value": 120
+        "value": 100
       },
       "letterSpacing": {
         "unit": "PIXELS",
@@ -627,7 +628,7 @@ const STYLES = {
       "fontSize": 18,
       "lineHeight": {
         "unit": "PERCENT",
-        "value": 120
+        "value": 100
       },
       "letterSpacing": {
         "unit": "PIXELS",

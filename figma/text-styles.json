@@ -9,7 +9,7 @@
       "fontSize": 112,
       "lineHeight": {
         "unit": "PERCENT",
-        "value": 110
+        "value": 100
       },
       "letterSpacing": {
         "unit": "PIXELS",
@@ -23,7 +23,7 @@
       "fontSize": 72,
       "lineHeight": {
         "unit": "PERCENT",
-        "value": 110
+        "value": 100
       },
       "letterSpacing": {
         "unit": "PIXELS",
@@ -37,7 +37,7 @@
       "fontSize": 48,
       "lineHeight": {
         "unit": "PERCENT",
-        "value": 110
+        "value": 100
       },
       "letterSpacing": {
         "unit": "PIXELS",
@@ -51,7 +51,7 @@
       "fontSize": 56,
       "lineHeight": {
         "unit": "PERCENT",
-        "value": 120
+        "value": 100
       },
       "letterSpacing": {
         "unit": "PIXELS",
@@ -65,7 +65,7 @@
       "fontSize": 42,
       "lineHeight": {
         "unit": "PERCENT",
-        "value": 110
+        "value": 100
       },
       "letterSpacing": {
         "unit": "PIXELS",
@@ -79,7 +79,7 @@
       "fontSize": 48,
       "lineHeight": {
         "unit": "PERCENT",
-        "value": 110
+        "value": 100
       },
       "letterSpacing": {
         "unit": "PIXELS",
@@ -93,7 +93,7 @@
       "fontSize": 36,
       "lineHeight": {
         "unit": "PERCENT",
-        "value": 110
+        "value": 100
       },
       "letterSpacing": {
         "unit": "PIXELS",
@@ -107,7 +107,7 @@
       "fontSize": 40,
       "lineHeight": {
         "unit": "PERCENT",
-        "value": 110
+        "value": 100
       },
       "letterSpacing": {
         "unit": "PIXELS",
@@ -121,7 +121,7 @@
       "fontSize": 32,
       "lineHeight": {
         "unit": "PERCENT",
-        "value": 110
+        "value": 100
       },
       "letterSpacing": {
         "unit": "PIXELS",
@@ -135,7 +135,7 @@
       "fontSize": 32,
       "lineHeight": {
         "unit": "PERCENT",
-        "value": 120
+        "value": 100
       },
       "letterSpacing": {
         "unit": "PIXELS",
@@ -150,7 +150,7 @@
       "fontSize": 18,
       "lineHeight": {
         "unit": "PERCENT",
-        "value": 120
+        "value": 100
       },
       "letterSpacing": {
         "unit": "PIXELS",

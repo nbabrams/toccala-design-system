@@ -24,7 +24,7 @@
           "name": "Palette/Clay",
           "type": "COLOR",
           "value": "#D76B45",
-          "description": "Accent buttons, feature bullets, large background disc."
+          "description": "Feature bullets, large background disc. NOT accent buttons — see Semantic/Accent."
         },
         {
           "name": "Palette/Sun",
@@ -186,7 +186,8 @@
         {
           "name": "Semantic/Accent",
           "type": "COLOR",
-          "alias": "Palette/Clay"
+          "alias": "Palette/Brick",
+          "description": "Brick, not Clay — Parchment labels on Clay fail AA (3.05:1). On Brick: 4.73:1."
         },
         {
           "name": "Semantic/Action Solid",

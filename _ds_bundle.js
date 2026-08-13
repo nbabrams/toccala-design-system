@@ -1,4 +1,4 @@
-/* @ds-bundle: {"format":4,"namespace":"ToccalaDesignSystem_316ada","components":[{"name":"FeatureItem","sourcePath":"components/cards/FeatureItem.jsx"},{"name":"PlanCard","sourcePath":"components/cards/PlanCard.jsx"},{"name":"Button","sourcePath":"components/core/Button.jsx"},{"name":"Divider","sourcePath":"components/core/Divider.jsx"},{"name":"Kicker","sourcePath":"components/core/Kicker.jsx"},{"name":"ScriptAccent","sourcePath":"components/core/ScriptAccent.jsx"},{"name":"TextLink","sourcePath":"components/core/TextLink.jsx"},{"name":"Wordmark","sourcePath":"components/core/Wordmark.jsx"},{"name":"AccentCircle","sourcePath":"components/decor/AccentCircle.jsx"},{"name":"SketchRing","sourcePath":"components/decor/SketchRing.jsx"},{"name":"TexturePanel","sourcePath":"components/decor/TexturePanel.jsx"},{"name":"UnderlineSwoosh","sourcePath":"components/decor/UnderlineSwoosh.jsx"}],"sourceHashes":{"components/cards/FeatureItem.jsx":"607d5e5b7212","components/cards/PlanCard.jsx":"bb5ca112803c","components/core/Button.jsx":"73188ad2fa0e","components/core/Divider.jsx":"5a010f781d1d","components/core/Kicker.jsx":"2e08a35aeafa","components/core/ScriptAccent.jsx":"35e59f2a73a0","components/core/TextLink.jsx":"2a7e516bc1b6","components/core/Wordmark.jsx":"9e7aad8efeb8","components/decor/AccentCircle.jsx":"0d81b7533e83","components/decor/SketchRing.jsx":"41d39ed67635","components/decor/TexturePanel.jsx":"22156f9b7dbd","components/decor/UnderlineSwoosh.jsx":"c0310f3c8256","figma/setup-plugin/code.js":"1624cfba2a50","ui_kits/brand-canvas/fonts-colors-band.jsx":"c2407c2d206c","ui_kits/brand-canvas/header.jsx":"a4f1ad1c7bc0","ui_kits/brand-canvas/hero.jsx":"1aeb4283be50","ui_kits/brand-canvas/offer-band.jsx":"418f95c54c80","ui_kits/brand-canvas/statement.jsx":"c166bb8955e8"},"inlinedExternals":[],"unexposedExports":[]} */
+/* @ds-bundle: {"format":4,"namespace":"ToccalaDesignSystem_316ada","components":[{"name":"FeatureItem","sourcePath":"components/cards/FeatureItem.jsx"},{"name":"PlanCard","sourcePath":"components/cards/PlanCard.jsx"},{"name":"Button","sourcePath":"components/core/Button.jsx"},{"name":"Divider","sourcePath":"components/core/Divider.jsx"},{"name":"Kicker","sourcePath":"components/core/Kicker.jsx"},{"name":"ScriptAccent","sourcePath":"components/core/ScriptAccent.jsx"},{"name":"TextLink","sourcePath":"components/core/TextLink.jsx"},{"name":"Wordmark","sourcePath":"components/core/Wordmark.jsx"},{"name":"AccentCircle","sourcePath":"components/decor/AccentCircle.jsx"},{"name":"SketchRing","sourcePath":"components/decor/SketchRing.jsx"},{"name":"TexturePanel","sourcePath":"components/decor/TexturePanel.jsx"},{"name":"UnderlineSwoosh","sourcePath":"components/decor/UnderlineSwoosh.jsx"}],"sourceHashes":{"components/cards/FeatureItem.jsx":"607d5e5b7212","components/cards/PlanCard.jsx":"bb5ca112803c","components/core/Button.jsx":"73188ad2fa0e","components/core/Divider.jsx":"5a010f781d1d","components/core/Kicker.jsx":"2e08a35aeafa","components/core/ScriptAccent.jsx":"35e59f2a73a0","components/core/TextLink.jsx":"2a7e516bc1b6","components/core/Wordmark.jsx":"9e7aad8efeb8","components/decor/AccentCircle.jsx":"0d81b7533e83","components/decor/SketchRing.jsx":"41d39ed67635","components/decor/TexturePanel.jsx":"22156f9b7dbd","components/decor/UnderlineSwoosh.jsx":"c0310f3c8256","figma/setup-plugin/code.js":"c18fefabb049","ui_kits/brand-canvas/fonts-colors-band.jsx":"c2407c2d206c","ui_kits/brand-canvas/header.jsx":"a4f1ad1c7bc0","ui_kits/brand-canvas/hero.jsx":"f25da65a8452","ui_kits/brand-canvas/offer-band.jsx":"418f95c54c80","ui_kits/brand-canvas/statement.jsx":"723b45e99a68"},"inlinedExternals":[],"unexposedExports":[]} */
 
 (() => {
 
@@ -555,7 +555,7 @@ const VARIABLES = {
       "name": "Palette/Clay",
       "type": "COLOR",
       "value": "#D76B45",
-      "description": "Accent buttons, feature bullets, large background disc."
+      "description": "Feature bullets, large background disc. NOT accent buttons — see Semantic/Accent."
     }, {
       "name": "Palette/Sun",
       "type": "COLOR",
@@ -688,7 +688,8 @@ const VARIABLES = {
     }, {
       "name": "Semantic/Accent",
       "type": "COLOR",
-      "alias": "Palette/Clay"
+      "alias": "Palette/Brick",
+      "description": "Brick, not Clay — Parchment labels on Clay fail AA (3.05:1). On Brick: 4.73:1."
     }, {
       "name": "Semantic/Action Solid",
       "type": "COLOR",
@@ -920,7 +921,7 @@ const STYLES = {
     "fontSize": 112,
     "lineHeight": {
       "unit": "PERCENT",
-      "value": 110
+      "value": 100
     },
     "letterSpacing": {
       "unit": "PIXELS",
@@ -933,7 +934,7 @@ const STYLES = {
     "fontSize": 72,
     "lineHeight": {
       "unit": "PERCENT",
-      "value": 110
+      "value": 100
     },
     "letterSpacing": {
       "unit": "PIXELS",
@@ -946,7 +947,7 @@ const STYLES = {
     "fontSize": 48,
     "lineHeight": {
       "unit": "PERCENT",
-      "value": 110
+      "value": 100
     },
     "letterSpacing": {
       "unit": "PIXELS",
@@ -959,7 +960,7 @@ const STYLES = {
     "fontSize": 56,
     "lineHeight": {
       "unit": "PERCENT",
-      "value": 120
+      "value": 100
     },
     "letterSpacing": {
       "unit": "PIXELS",
@@ -972,7 +973,7 @@ const STYLES = {
     "fontSize": 42,
     "lineHeight": {
       "unit": "PERCENT",
-      "value": 110
+      "value": 100
     },
     "letterSpacing": {
       "unit": "PIXELS",
@@ -985,7 +986,7 @@ const STYLES = {
     "fontSize": 48,
     "lineHeight": {
       "unit": "PERCENT",
-      "value": 110
+      "value": 100
     },
     "letterSpacing": {
       "unit": "PIXELS",
@@ -998,7 +999,7 @@ const STYLES = {
     "fontSize": 36,
     "lineHeight": {
       "unit": "PERCENT",
-      "value": 110
+      "value": 100
     },
     "letterSpacing": {
       "unit": "PIXELS",
@@ -1011,7 +1012,7 @@ const STYLES = {
     "fontSize": 40,
     "lineHeight": {
       "unit": "PERCENT",
-      "value": 110
+      "value": 100
     },
     "letterSpacing": {
       "unit": "PIXELS",
@@ -1024,7 +1025,7 @@ const STYLES = {
     "fontSize": 32,
     "lineHeight": {
       "unit": "PERCENT",
-      "value": 110
+      "value": 100
     },
     "letterSpacing": {
       "unit": "PIXELS",
@@ -1037,7 +1038,7 @@ const STYLES = {
     "fontSize": 32,
     "lineHeight": {
       "unit": "PERCENT",
-      "value": 120
+      "value": 100
     },
     "letterSpacing": {
       "unit": "PIXELS",
@@ -1051,7 +1052,7 @@ const STYLES = {
     "fontSize": 18,
     "lineHeight": {
       "unit": "PERCENT",
-      "value": 120
+      "value": 100
     },
     "letterSpacing": {
       "unit": "PIXELS",
@@ -1685,7 +1686,7 @@ function Hero() {
       fontFamily: "var(--font-display-cond)",
       fontWeight: 500,
       fontSize: 112,
-      lineHeight: "123px",
+      lineHeight: "112px",
       color: "var(--text-primary)",
       textWrap: "balance",
       alignSelf: "stretch"
@@ -1993,7 +1994,7 @@ function Statement() {
       fontFamily: "var(--font-display-cond)",
       fontWeight: 500,
       fontSize: 56,
-      lineHeight: 1.2,
+      lineHeight: 1,
       color: "var(--text-on-dark)"
     }
   }, "A secondary headline would look like this"), /*#__PURE__*/React.createElement("p", {

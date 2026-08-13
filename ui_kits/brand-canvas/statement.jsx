@@ -9,7 +9,7 @@ function Statement() {
           background: "url(../../assets/img/lifestyle-fridge.png) center / cover no-repeat" }} />
       </div>
       <div style={{ overflow: "hidden", display: "flex", flexDirection: "column", gap: 36, alignItems: "flex-start", flexGrow: 1 }}>
-        <h2 style={{ width: 582.646, fontFamily: "var(--font-display-cond)", fontWeight: 500, fontSize: 56, lineHeight: 1.2, color: "var(--text-on-dark)" }}>
+        <h2 style={{ width: 582.646, fontFamily: "var(--font-display-cond)", fontWeight: 500, fontSize: 56, lineHeight: 1, color: "var(--text-on-dark)" }}>
           A secondary headline would look like this
         </h2>
         <p style={{ width: 514.082, fontFamily: "var(--font-numeric)", fontWeight: 500, fontSize: 16, lineHeight: 1.4,

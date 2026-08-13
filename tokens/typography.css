@@ -31,8 +31,8 @@
 --fs-price:54px;
 --fs-plan-label:13px;
 
---lh-display:1.1; /* @kind other */
---lh-heading:1.2; /* @kind other */
+--lh-display:1; /* @kind other */
+--lh-heading:1.2; /* @kind other */ /* text-face rows only (Lead); headings are flush at --lh-display */
 --lh-body:1.4; /* @kind other */
 --lh-flush:100%; /* @kind other */
 --lh-script:44px; /* @kind other */
@@ -46,14 +46,14 @@
 .t-display{font-family:var(--font-display-cond);font-weight:500;font-size:var(--fs-display);line-height:var(--lh-display);color:var(--text-primary)}
 .t-h1{font-family:var(--font-display-cond);font-weight:500;font-size:var(--fs-h1);line-height:var(--lh-display);color:var(--text-primary)}
 .t-h1-m{font-family:var(--font-display-cond);font-weight:500;font-size:var(--fs-h1-m);line-height:var(--lh-display);color:var(--text-primary)}
-.t-h2{font-family:var(--font-display-cond);font-weight:500;font-size:var(--fs-h2);line-height:var(--lh-heading);color:var(--text-primary)}
+.t-h2{font-family:var(--font-display-cond);font-weight:500;font-size:var(--fs-h2);line-height:var(--lh-display);color:var(--text-primary)}
 .t-h2-m{font-family:var(--font-display-cond);font-weight:500;font-size:var(--fs-h2-m);line-height:var(--lh-display);color:var(--text-primary)}
 .t-h3{font-family:var(--font-display-cond);font-weight:500;font-size:var(--fs-h3);line-height:var(--lh-display);color:var(--text-primary)}
 .t-h3-m{font-family:var(--font-display-cond);font-weight:500;font-size:var(--fs-h3-m);line-height:var(--lh-display);color:var(--text-primary)}
 .t-h4{font-family:var(--font-display-cond);font-weight:500;font-size:var(--fs-h4);line-height:var(--lh-display);color:var(--text-primary)}
 .t-h4-m{font-family:var(--font-display-cond);font-weight:500;font-size:var(--fs-h4-m);line-height:var(--lh-display);color:var(--text-primary)}
-.t-h5{font-family:var(--font-display-cond);font-weight:500;font-size:var(--fs-h5);line-height:var(--lh-heading);color:var(--text-primary)}
-.t-h6{font-family:var(--font-display);font-weight:600;font-size:var(--fs-h6);line-height:var(--lh-heading);letter-spacing:var(--ls-h6);text-transform:uppercase;color:var(--text-kicker)}
+.t-h5{font-family:var(--font-display-cond);font-weight:500;font-size:var(--fs-h5);line-height:var(--lh-display);color:var(--text-primary)}
+.t-h6{font-family:var(--font-display);font-weight:600;font-size:var(--fs-h6);line-height:var(--lh-display);letter-spacing:var(--ls-h6);text-transform:uppercase;color:var(--text-kicker)}
 .t-lead{font-family:var(--font-text);font-weight:500;font-size:var(--fs-lead);line-height:var(--lh-heading);color:var(--text-primary)}
 .t-lead-m{font-family:var(--font-text);font-weight:500;font-size:var(--fs-lead-m);line-height:var(--lh-body);color:var(--text-primary)}
 .t-body-l{font-family:var(--font-text);font-weight:500;font-size:var(--fs-body-l);line-height:var(--lh-body);color:var(--text-primary)}
