@@ -1,0 +1,10 @@
+/* Toccala — element defaults. */
+html{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body{margin:0;background:var(--surface-canvas);color:var(--text-primary);font-family:var(--font-text);font-weight:var(--fw-text-medium);font-size:var(--fs-body-s);line-height:var(--lh-body);text-wrap:pretty}
+h1,h2,h3,h4,h5,h6{margin:0;font-weight:500;line-height:var(--lh-display);color:var(--text-primary)}
+h1,h2,h3,h4{font-family:var(--font-display-cond)}
+h5,h6{font-family:var(--font-display)}
+p{margin:0}
+a{color:var(--link-on-light);text-decoration:underline;text-underline-offset:3px;transition:color var(--dur-fast) var(--ease-warm),opacity var(--dur-fast) var(--ease-warm)}
+a:hover{color:var(--raw-rust)}
+a:active{color:var(--raw-rust);opacity:.8}

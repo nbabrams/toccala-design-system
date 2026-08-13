@@ -1,0 +1,40 @@
+/* Toccala — spacing & geometry. Values are the auto-layout gaps/paddings used in the source. */
+:root{
+--space-2:2px;
+--space-8:8px;
+--space-10:10px;
+--space-11:11px;
+--space-12:12px;
+--space-16:16px;
+--space-18:18px;
+--space-20:20px;
+--space-24:24px;
+--space-32:32px;
+--space-34:34px;
+--space-36:36px;
+--space-38:38px;
+--space-40:40px;
+--space-53:53px;
+--space-56:56px;
+--space-64:64px;
+--space-72:72px;
+--space-90:90px;
+--space-96:96px;
+--space-112:112px;
+--space-140:140px;
+--space-153:153px;
+
+--gutter-page:64px;   /* 01-Hero horizontal padding */
+--gutter-dark:96px;   /* Fonts & Colors band horizontal padding */
+--container-max:1440px;
+
+--radius-xs:4px;      /* logo lockup plate */
+--radius-md:12px;     /* card media top corners */
+--radius-lg:16px;     /* cards, image blocks */
+--radius-pill:999px;  /* every button */
+--radius-round:50%;   /* swatches, accent circles */
+
+--rule-weight:1.5px;
+--swatch-size:56px;
+--bullet-size:8px;
+}

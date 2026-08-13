@@ -1,0 +1,385 @@
+{
+  "$schema": "toccala-figma-text-styles/1",
+  "note": "All 20 rows of the source Typography System frame. lineHeight is {unit:'PERCENT'|'PIXELS'}. Create via the Plugin API (figma.createTextStyle) — see figma/README.md.",
+  "styles": [
+    {
+      "name": "Display/Desktop",
+      "fontFamily": "Optima nova LT Pro",
+      "fontStyle": "Medium Condensed",
+      "fontSize": 132,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 110
+      },
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      }
+    },
+    {
+      "name": "Heading/H1 Desktop",
+      "fontFamily": "Optima nova LT Pro",
+      "fontStyle": "Medium Condensed",
+      "fontSize": 72,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 110
+      },
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      }
+    },
+    {
+      "name": "Heading/H1 Mobile",
+      "fontFamily": "Optima nova LT Pro",
+      "fontStyle": "Medium Condensed",
+      "fontSize": 48,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 110
+      },
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      }
+    },
+    {
+      "name": "Heading/H2 Desktop",
+      "fontFamily": "Optima nova LT Pro",
+      "fontStyle": "Medium Condensed",
+      "fontSize": 56,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120
+      },
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      }
+    },
+    {
+      "name": "Heading/H2 Mobile",
+      "fontFamily": "Optima nova LT Pro",
+      "fontStyle": "Medium Condensed",
+      "fontSize": 42,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 110
+      },
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      }
+    },
+    {
+      "name": "Heading/H3 Desktop",
+      "fontFamily": "Optima nova LT Pro",
+      "fontStyle": "Medium Condensed",
+      "fontSize": 40,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 110
+      },
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      }
+    },
+    {
+      "name": "Heading/H3 Mobile",
+      "fontFamily": "Optima nova LT Pro",
+      "fontStyle": "Medium Condensed",
+      "fontSize": 32,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 110
+      },
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      }
+    },
+    {
+      "name": "Heading/H4",
+      "fontFamily": "Optima nova LT Pro",
+      "fontStyle": "Medium Condensed",
+      "fontSize": 32,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 110
+      },
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "note": "Desktop & mobile."
+    },
+    {
+      "name": "Heading/H5",
+      "fontFamily": "Optima nova LT Pro",
+      "fontStyle": "Medium",
+      "fontSize": 22,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120
+      },
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "note": "Regular width, not condensed."
+    },
+    {
+      "name": "Heading/H6 Eyebrow",
+      "fontFamily": "Optima nova LT Pro",
+      "fontStyle": "Demi",
+      "fontSize": 14,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120
+      },
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 3
+      },
+      "textCase": "UPPER",
+      "note": "Kicker label. Colour: Semantic/Text Kicker."
+    },
+    {
+      "name": "Lead/Desktop",
+      "fontFamily": "Wix Madefor Text",
+      "fontStyle": "Medium",
+      "fontSize": 24,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120
+      },
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      }
+    },
+    {
+      "name": "Lead/Mobile",
+      "fontFamily": "Wix Madefor Text",
+      "fontStyle": "Medium",
+      "fontSize": 20,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 140
+      },
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      }
+    },
+    {
+      "name": "Body/L Desktop",
+      "fontFamily": "Wix Madefor Text",
+      "fontStyle": "Medium",
+      "fontSize": 20,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 140
+      },
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      }
+    },
+    {
+      "name": "Body/L Mobile",
+      "fontFamily": "Wix Madefor Text",
+      "fontStyle": "Medium",
+      "fontSize": 18,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 140
+      },
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      }
+    },
+    {
+      "name": "Body/M Desktop",
+      "fontFamily": "Wix Madefor Text",
+      "fontStyle": "Medium",
+      "fontSize": 18,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 140
+      },
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      }
+    },
+    {
+      "name": "Body/M Mobile",
+      "fontFamily": "Wix Madefor Text",
+      "fontStyle": "Medium",
+      "fontSize": 18,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 140
+      },
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      }
+    },
+    {
+      "name": "Body/S",
+      "fontFamily": "Wix Madefor Text",
+      "fontStyle": "Medium",
+      "fontSize": 16,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 140
+      },
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "note": "Buttons, feature lines."
+    },
+    {
+      "name": "Body/XS",
+      "fontFamily": "Wix Madefor Text",
+      "fontStyle": "Medium",
+      "fontSize": 14,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 140
+      },
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      }
+    },
+    {
+      "name": "Body/Caption",
+      "fontFamily": "Wix Madefor Text",
+      "fontStyle": "Medium",
+      "fontSize": 12,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 140
+      },
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      }
+    },
+    {
+      "name": "Accent/Script",
+      "fontFamily": "Seaweed Script",
+      "fontStyle": "Regular",
+      "fontSize": 34,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 44
+      },
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "note": "Handwritten aside. Lowercase, one per view."
+    }
+  ],
+  "extraStyles": [
+    {
+      "name": "Numeral/Step",
+      "fontFamily": "Optima nova LT Pro",
+      "fontStyle": "Medium Condensed",
+      "fontSize": 120,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 100
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -2
+      },
+      "note": "The '01' step numerals."
+    },
+    {
+      "name": "Numeral/Price",
+      "fontFamily": "Optima nova LT Pro",
+      "fontStyle": "Medium Condensed",
+      "fontSize": 54,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 100
+      },
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "note": "e.g. $55."
+    },
+    {
+      "name": "Label/Plan",
+      "fontFamily": "Wix Madefor Text",
+      "fontStyle": "Medium",
+      "fontSize": 13,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 100
+      },
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 2.5
+      },
+      "textCase": "UPPER",
+      "note": "Card plan name. Colour: Semantic/Text Plan Label."
+    },
+    {
+      "name": "Label/Micro",
+      "fontFamily": "Wix Madefor Text",
+      "fontStyle": "Medium",
+      "fontSize": 13,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 100
+      },
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 3
+      },
+      "textCase": "UPPER",
+      "note": "FONTS / COLORS footer labels."
+    },
+    {
+      "name": "Accent/Script Small",
+      "fontFamily": "Seaweed Script",
+      "fontStyle": "Regular",
+      "fontSize": 29,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 24
+      },
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      }
+    }
+  ],
+  "effectStyles": [
+    {
+      "name": "Elevation/Card",
+      "type": "DROP_SHADOW",
+      "color": "#524229",
+      "opacity": 0.18,
+      "offset": {
+        "x": 0,
+        "y": 10
+      },
+      "radius": 30,
+      "spread": 0,
+      "note": "The ONLY shadow in the system. Warm brown, not grey."
+    }
+  ]
+}

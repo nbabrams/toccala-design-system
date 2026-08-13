@@ -1,0 +1,15 @@
+/* Toccala — elevation, motion, texture. */
+:root{
+--shadow-card:0px 10px 30px 0px rgba(82,66,41,0.18);
+--stroke-outline:1.5px solid var(--action-outline); /* @kind other */
+--stroke-swatch:1px solid var(--swatch-ring); /* @kind other */
+--stroke-salmon:1.5px solid var(--raw-salmon); /* @kind other */
+
+--texture-tile:url("../assets/img/texture-tile.png"); /* @kind other */
+--texture-tile-size:440px 440px; /* @kind other */
+
+--ease-warm:cubic-bezier(0.22,0.61,0.36,1); /* @kind other */
+--dur-fast:140ms; /* @kind other */
+--dur-base:220ms; /* @kind other */
+--dur-slow:420ms; /* @kind other */
+}

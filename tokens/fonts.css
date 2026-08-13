@@ -1,0 +1,23 @@
+/* Toccala — webfonts.
+
+   DISPLAY: Optima nova LT Pro, served from the user's Adobe Fonts (Typekit) kit
+   `tcs2wbu`. The @font-face rules below alias Adobe's `optima-nova-lt-pro` family
+   to the source file's own family name, "Optima nova LT Pro", so --font-display
+   resolves to the real face. Ships Medium (500), Demi (600) and Bold (700) with
+   italics, plus a single Condensed weight (500).
+   NOTE: the kit is domain-locked to the domains registered on tcs2wbu — if display
+   type falls back to serif on a new host, add that domain to the kit.
+
+   TEXT / SCRIPT / NUMERIC: Wix Madefor Text, Seaweed Script and Inter are the
+   genuine faces from the source, loaded from Google Fonts. */
+
+@import url("https://use.typekit.net/tcs2wbu.css");
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:wght@400;500;600;700&family=Seaweed+Script&family=Inter:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
+
+@font-face{font-family:"Optima nova LT Pro";src:url("https://use.typekit.net/af/43a22a/0000000000000000775aaece/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff2"),url("https://use.typekit.net/af/43a22a/0000000000000000775aaece/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff");font-display:swap;font-style:normal;font-weight:500}
+@font-face{font-family:"Optima nova LT Pro";src:url("https://use.typekit.net/af/00c912/0000000000000000775aaec2/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3") format("woff2"),url("https://use.typekit.net/af/00c912/0000000000000000775aaec2/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3") format("woff");font-display:swap;font-style:italic;font-weight:500}
+@font-face{font-family:"Optima nova LT Pro";src:url("https://use.typekit.net/af/9bba47/0000000000000000775aaedd/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff2"),url("https://use.typekit.net/af/9bba47/0000000000000000775aaedd/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff");font-display:swap;font-style:normal;font-weight:600}
+@font-face{font-family:"Optima nova LT Pro";src:url("https://use.typekit.net/af/e646c6/0000000000000000775aaed7/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3") format("woff2"),url("https://use.typekit.net/af/e646c6/0000000000000000775aaed7/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3") format("woff");font-display:swap;font-style:italic;font-weight:600}
+@font-face{font-family:"Optima nova LT Pro";src:url("https://use.typekit.net/af/d81dbb/0000000000000000775aaed9/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/d81dbb/0000000000000000775aaed9/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff");font-display:swap;font-style:normal;font-weight:700}
+@font-face{font-family:"Optima nova LT Pro";src:url("https://use.typekit.net/af/b851a5/0000000000000000775aaeda/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff2"),url("https://use.typekit.net/af/b851a5/0000000000000000775aaeda/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff");font-display:swap;font-style:italic;font-weight:700}
+@font-face{font-family:"Optima nova LT Pro Cond";src:url("https://use.typekit.net/af/157a41/0000000000000000775aaeca/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff2"),url("https://use.typekit.net/af/157a41/0000000000000000775aaeca/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff");font-display:swap;font-style:normal;font-weight:500}
