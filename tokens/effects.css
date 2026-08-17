@@ -6,7 +6,7 @@
 --stroke-salmon:1.5px solid var(--raw-salmon); /* @kind other */
 
 --texture-tile:url("../assets/img/texture-tile.png"); /* @kind other */
---texture-tile-size:440px 440px; /* @kind other */
+--texture-tile-size:220px 220px; /* @kind other */
 
 --ease-warm:cubic-bezier(0.22,0.61,0.36,1); /* @kind other */
 --dur-fast:140ms; /* @kind other */

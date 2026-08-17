@@ -27,6 +27,20 @@
 --gutter-page:64px;   /* 01-Hero horizontal padding */
 --gutter-dark:96px;   /* Fonts & Colors band horizontal padding */
 --container-max:1440px;
+--content-max:1312px; /* 1440 frame minus two 64px gutters */
+
+/* Section rhythm — transcribed from the approved homepage (01.00). Vertical padding
+   comes in three steps; every band uses --gutter-page except the two texture bands. */
+--section-y-tight:64px;   /* 09-Footer top */
+--section-y:96px;         /* 03, 04, 08 — the default */
+--section-y-loose:112px;  /* 01-Hero bottom, 06-Testimonials */
+--section-y-hero:140px;   /* 05-Notecards top only */
+--section-gap-sm:32px;    /* 07-FinalCTA, 08-Sample */
+--section-gap:40px;       /* 04-Pricing, 06-Testimonials */
+--section-gap-lg:56px;    /* 01-Hero, 03-HowItWorks */
+--section-gap-xl:64px;    /* 05-Notecards, 09-Footer */
+--section-head-gap:16px;  /* kicker → headline → subhead */
+--header-h:104px;
 
 --radius-xs:4px;      /* logo lockup plate */
 --radius-md:12px;     /* card media top corners */

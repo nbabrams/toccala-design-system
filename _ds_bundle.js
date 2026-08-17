@@ -1,4 +1,4 @@
-/* @ds-bundle: {"format":4,"namespace":"ToccalaDesignSystem_316ada","components":[{"name":"FeatureItem","sourcePath":"components/cards/FeatureItem.jsx"},{"name":"PlanCard","sourcePath":"components/cards/PlanCard.jsx"},{"name":"Button","sourcePath":"components/core/Button.jsx"},{"name":"Divider","sourcePath":"components/core/Divider.jsx"},{"name":"Kicker","sourcePath":"components/core/Kicker.jsx"},{"name":"ScriptAccent","sourcePath":"components/core/ScriptAccent.jsx"},{"name":"TextLink","sourcePath":"components/core/TextLink.jsx"},{"name":"Wordmark","sourcePath":"components/core/Wordmark.jsx"},{"name":"AccentCircle","sourcePath":"components/decor/AccentCircle.jsx"},{"name":"SketchRing","sourcePath":"components/decor/SketchRing.jsx"},{"name":"TexturePanel","sourcePath":"components/decor/TexturePanel.jsx"},{"name":"UnderlineSwoosh","sourcePath":"components/decor/UnderlineSwoosh.jsx"}],"sourceHashes":{"components/cards/FeatureItem.jsx":"607d5e5b7212","components/cards/PlanCard.jsx":"bb5ca112803c","components/core/Button.jsx":"73188ad2fa0e","components/core/Divider.jsx":"5a010f781d1d","components/core/Kicker.jsx":"2e08a35aeafa","components/core/ScriptAccent.jsx":"35e59f2a73a0","components/core/TextLink.jsx":"2a7e516bc1b6","components/core/Wordmark.jsx":"9e7aad8efeb8","components/decor/AccentCircle.jsx":"0d81b7533e83","components/decor/SketchRing.jsx":"41d39ed67635","components/decor/TexturePanel.jsx":"22156f9b7dbd","components/decor/UnderlineSwoosh.jsx":"c0310f3c8256","figma/setup-plugin/code.js":"c18fefabb049","ui_kits/brand-canvas/fonts-colors-band.jsx":"c2407c2d206c","ui_kits/brand-canvas/header.jsx":"a4f1ad1c7bc0","ui_kits/brand-canvas/hero.jsx":"f25da65a8452","ui_kits/brand-canvas/offer-band.jsx":"418f95c54c80","ui_kits/brand-canvas/statement.jsx":"723b45e99a68"},"inlinedExternals":[],"unexposedExports":[]} */
+/* @ds-bundle: {"format":4,"namespace":"ToccalaDesignSystem_316ada","components":[{"name":"CardQuote","sourcePath":"components/cards/CardQuote.jsx"},{"name":"FeatureItem","sourcePath":"components/cards/FeatureItem.jsx"},{"name":"PlanCard","sourcePath":"components/cards/PlanCard.jsx"},{"name":"Footer","sourcePath":"components/chrome/Footer.jsx"},{"name":"FooterMobile","sourcePath":"components/chrome/FooterMobile.jsx"},{"name":"HeaderNav","sourcePath":"components/chrome/HeaderNav.jsx"},{"name":"HeaderNavWireframeMobile","sourcePath":"components/chrome/HeaderNavWireframeMobile.jsx"},{"name":"Badge","sourcePath":"components/core/Badge.jsx"},{"name":"Button","sourcePath":"components/core/Button.jsx"},{"name":"Chip","sourcePath":"components/core/Chip.jsx"},{"name":"Divider","sourcePath":"components/core/Divider.jsx"},{"name":"Kicker","sourcePath":"components/core/Kicker.jsx"},{"name":"ScriptAccent","sourcePath":"components/core/ScriptAccent.jsx"},{"name":"TextLink","sourcePath":"components/core/TextLink.jsx"},{"name":"Wordmark","sourcePath":"components/core/Wordmark.jsx"},{"name":"AccentCircle","sourcePath":"components/decor/AccentCircle.jsx"},{"name":"SketchRing","sourcePath":"components/decor/SketchRing.jsx"},{"name":"TexturePanel","sourcePath":"components/decor/TexturePanel.jsx"},{"name":"UnderlineSwoosh","sourcePath":"components/decor/UnderlineSwoosh.jsx"}],"sourceHashes":{"components/cards/CardQuote.jsx":"b2254342effd","components/cards/FeatureItem.jsx":"607d5e5b7212","components/cards/PlanCard.jsx":"bb5ca112803c","components/chrome/Footer.jsx":"bea386839c26","components/chrome/FooterMobile.jsx":"a8129864b3a5","components/chrome/HeaderNav.jsx":"a85a6ffa8f7f","components/chrome/HeaderNavWireframeMobile.jsx":"90baca002f0f","components/core/Badge.jsx":"32786b148106","components/core/Button.jsx":"73188ad2fa0e","components/core/Chip.jsx":"3540b2d2d238","components/core/Divider.jsx":"5a010f781d1d","components/core/Kicker.jsx":"2e08a35aeafa","components/core/ScriptAccent.jsx":"35e59f2a73a0","components/core/TextLink.jsx":"2a7e516bc1b6","components/core/Wordmark.jsx":"9e7aad8efeb8","components/decor/AccentCircle.jsx":"0d81b7533e83","components/decor/SketchRing.jsx":"41d39ed67635","components/decor/TexturePanel.jsx":"3b85457ef69a","components/decor/UnderlineSwoosh.jsx":"c0310f3c8256","figma/setup-plugin/code.js":"c12401a27f3f","ui_kits/brand-canvas/fonts-colors-band.jsx":"c2407c2d206c","ui_kits/brand-canvas/header.jsx":"a4f1ad1c7bc0","ui_kits/brand-canvas/hero.jsx":"f25da65a8452","ui_kits/brand-canvas/offer-band.jsx":"418f95c54c80","ui_kits/brand-canvas/statement.jsx":"a1a716d83c43"},"inlinedExternals":[],"unexposedExports":[]} */
 
 (() => {
 
@@ -7,6 +7,63 @@ const __ds_ns = (window.ToccalaDesignSystem_316ada = window.ToccalaDesignSystem_
 const __ds_scope = {};
 
 (__ds_ns.__errors = __ds_ns.__errors || []);
+
+// components/cards/CardQuote.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function CardQuote({
+  quote,
+  attribution,
+  width = 636,
+  style,
+  ...rest
+}) {
+  return /*#__PURE__*/React.createElement("figure", _extends({
+    style: {
+      display: "flex",
+      flexDirection: "column",
+      gap: 24,
+      margin: 0,
+      width,
+      padding: "24px 32px 32px",
+      boxSizing: "border-box",
+      borderRadius: "var(--radius-lg)",
+      background: "var(--surface-card)",
+      boxShadow: "var(--shadow-card)",
+      ...style
+    }
+  }, rest), /*#__PURE__*/React.createElement("span", {
+    "aria-hidden": "true",
+    style: {
+      fontFamily: "var(--font-display)",
+      fontWeight: 500,
+      fontSize: 64,
+      lineHeight: 1,
+      color: "var(--clay)",
+      height: 44
+    }
+  }, "\u201C"), /*#__PURE__*/React.createElement("blockquote", {
+    style: {
+      margin: 0,
+      fontFamily: "var(--font-text)",
+      fontWeight: 500,
+      fontSize: 20,
+      lineHeight: "var(--lh-body)",
+      color: "var(--text-primary)",
+      textWrap: "pretty"
+    }
+  }, quote), /*#__PURE__*/React.createElement("figcaption", {
+    style: {
+      fontFamily: "var(--font-text)",
+      fontWeight: 500,
+      fontSize: 16,
+      lineHeight: "100%",
+      color: "var(--text-kicker)"
+    }
+  }, attribution));
+}
+Object.assign(__ds_scope, { CardQuote, __ds_default_components_cards_CardQuote_1w3yy3i: CardQuote });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/cards/CardQuote.jsx", error: String((e && e.message) || e) }); }
 
 // components/cards/FeatureItem.jsx
 try { (() => {
@@ -44,6 +101,50 @@ function FeatureItem({
 }
 Object.assign(__ds_scope, { FeatureItem, __ds_default_components_cards_FeatureItem_1bw7w29: FeatureItem });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/cards/FeatureItem.jsx", error: String((e && e.message) || e) }); }
+
+// components/core/Badge.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+const TONES = {
+  accent: {
+    background: "var(--accent)",
+    color: "var(--accent-ink)"
+  },
+  dark: {
+    background: "var(--surface-dark)",
+    color: "var(--text-on-dark)"
+  },
+  sun: {
+    background: "var(--sun)",
+    color: "var(--pine)"
+  }
+};
+function Badge({
+  tone = "accent",
+  children,
+  style,
+  ...rest
+}) {
+  return /*#__PURE__*/React.createElement("span", _extends({
+    style: {
+      display: "inline-flex",
+      alignItems: "center",
+      justifyContent: "center",
+      padding: "8px 16px",
+      borderRadius: "var(--radius-pill)",
+      fontFamily: "var(--font-text)",
+      fontWeight: 500,
+      fontSize: 13,
+      lineHeight: "100%",
+      whiteSpace: "nowrap",
+      boxSizing: "border-box",
+      ...(TONES[tone] || TONES.accent),
+      ...style
+    }
+  }, rest), children);
+}
+Object.assign(__ds_scope, { Badge, __ds_default_components_core_Badge_2ajn45: Badge });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/core/Badge.jsx", error: String((e && e.message) || e) }); }
 
 // components/core/Button.jsx
 try { (() => {
@@ -131,6 +232,53 @@ function Button({
 }
 Object.assign(__ds_scope, { Button, __ds_default_components_core_Button_51d4zy: Button });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/core/Button.jsx", error: String((e && e.message) || e) }); }
+
+// components/core/Chip.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+const TONES = {
+  light: {
+    background: "transparent",
+    color: "var(--text-primary)",
+    border: "1.5px solid var(--hairline)"
+  },
+  dark: {
+    background: "transparent",
+    color: "var(--text-on-dark)",
+    border: "1.5px solid var(--hairline-on-dark)"
+  },
+  solid: {
+    background: "var(--surface-card)",
+    color: "var(--text-primary)",
+    border: "1.5px solid transparent"
+  }
+};
+function Chip({
+  tone = "light",
+  children,
+  style,
+  ...rest
+}) {
+  return /*#__PURE__*/React.createElement("span", _extends({
+    style: {
+      display: "inline-flex",
+      alignItems: "center",
+      justifyContent: "center",
+      padding: "8px 16px",
+      borderRadius: "var(--radius-pill)",
+      fontFamily: "var(--font-text)",
+      fontWeight: 500,
+      fontSize: 13,
+      lineHeight: "100%",
+      whiteSpace: "nowrap",
+      boxSizing: "border-box",
+      ...(TONES[tone] || TONES.light),
+      ...style
+    }
+  }, rest), children);
+}
+Object.assign(__ds_scope, { Chip, __ds_default_components_core_Chip_pwdwza: Chip });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/core/Chip.jsx", error: String((e && e.message) || e) }); }
 
 // components/core/Divider.jsx
 try { (() => {
@@ -410,6 +558,592 @@ function Wordmark({
 Object.assign(__ds_scope, { Wordmark, __ds_default_components_core_Wordmark_1k8ipq1: Wordmark });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/core/Wordmark.jsx", error: String((e && e.message) || e) }); }
 
+__ds_scope.__ds_default_components_core_Wordmark_1k8ipq1$1487l6k = __ds_scope.__ds_default_components_core_Wordmark_1k8ipq1 !== undefined ? __ds_scope.__ds_default_components_core_Wordmark_1k8ipq1 : __ds_scope.Wordmark;
+
+__ds_scope.__ds_default_components_core_Kicker_am82ln$1jcif1q = __ds_scope.__ds_default_components_core_Kicker_am82ln !== undefined ? __ds_scope.__ds_default_components_core_Kicker_am82ln : __ds_scope.Kicker;
+
+__ds_scope.__ds_default_components_core_Button_51d4zy$1drnhg1 = __ds_scope.__ds_default_components_core_Button_51d4zy !== undefined ? __ds_scope.__ds_default_components_core_Button_51d4zy : __ds_scope.Button;
+
+// components/chrome/Footer.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+const DEFAULT_COLUMNS = [{
+  title: "Site",
+  links: [{
+    label: "Products & Pricing",
+    href: "#"
+  }, {
+    label: "How It Works",
+    href: "#"
+  }, {
+    label: "About",
+    href: "#"
+  }, {
+    label: "Contact",
+    href: "#"
+  }]
+}, {
+  title: "Support",
+  links: [{
+    label: "FAQ",
+    href: "#"
+  }, {
+    label: "Request a sample",
+    href: "#"
+  }, {
+    label: "Privacy Policy & Terms",
+    href: "#"
+  }]
+}];
+const linkStyle = {
+  fontFamily: "var(--font-text)",
+  fontWeight: 500,
+  fontSize: 16,
+  lineHeight: "100%",
+  color: "var(--text-on-dark)",
+  textDecoration: "none"
+};
+function Footer({
+  columns = DEFAULT_COLUMNS,
+  blurb = "Monthly print marketing for real estate agents. Something they can hold.",
+  contact = "(760) 407-4783  \u00b7  hello@toccala.com",
+  signupTitle = "Stay in touch",
+  signupNote = "Unsubscribe anytime.",
+  copyright = "\u00a9 2026 Toccala. All rights reserved.",
+  socials = [{
+    href: "#",
+    label: "Social"
+  }, {
+    href: "#",
+    label: "Social"
+  }, {
+    href: "#",
+    label: "Social"
+  }],
+  ground,
+  basePath = "",
+  style,
+  ...rest
+}) {
+  return /*#__PURE__*/React.createElement("footer", _extends({
+    style: {
+      display: "flex",
+      flexDirection: "column",
+      gap: 64,
+      alignItems: "center",
+      padding: "64px var(--gutter-page) 40px",
+      boxSizing: "border-box",
+      overflow: "hidden",
+      background: `url(${ground ?? basePath + "assets/img/footer-ground.jpg"}) center / cover no-repeat, var(--surface-dark)`,
+      ...style
+    }
+  }, rest), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      flexDirection: "row",
+      alignItems: "flex-start",
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      flexDirection: "column",
+      gap: 16,
+      alignItems: "flex-start",
+      width: 329,
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement(__ds_scope.__ds_default_components_core_Wordmark_1k8ipq1$1487l6k, {
+    tone: "cream",
+    width: 129,
+    basePath: basePath
+  }), /*#__PURE__*/React.createElement("p", {
+    style: {
+      margin: 0,
+      fontFamily: "var(--font-text)",
+      fontWeight: 500,
+      fontSize: 16,
+      lineHeight: "var(--lh-body)",
+      color: "var(--text-on-dark-soft)",
+      textWrap: "pretty"
+    }
+  }, blurb), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: "var(--font-text)",
+      fontWeight: 500,
+      fontSize: 16,
+      lineHeight: "100%",
+      color: "var(--link-on-dark)"
+    }
+  }, contact)), /*#__PURE__*/React.createElement("span", {
+    style: {
+      flexGrow: 1
+    }
+  }), columns.map((col, i) => /*#__PURE__*/React.createElement(React.Fragment, {
+    key: col.title
+  }, i > 0 ? /*#__PURE__*/React.createElement("span", {
+    style: {
+      width: 72,
+      flexShrink: 0
+    }
+  }) : null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      flexDirection: "column",
+      gap: 18,
+      alignItems: "flex-start",
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement(__ds_scope.__ds_default_components_core_Kicker_am82ln$1jcif1q, {
+    tone: "dark"
+  }, col.title), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      flexDirection: "column",
+      gap: 12,
+      alignItems: "flex-start"
+    }
+  }, col.links.map(l => /*#__PURE__*/React.createElement("a", {
+    key: l.label,
+    href: l.href,
+    style: linkStyle,
+    onMouseEnter: e => {
+      e.currentTarget.style.color = "var(--link-on-dark)";
+    },
+    onMouseLeave: e => {
+      e.currentTarget.style.color = "var(--text-on-dark)";
+    }
+  }, l.label)))))), /*#__PURE__*/React.createElement("span", {
+    style: {
+      width: 72,
+      flexShrink: 0
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      flexDirection: "column",
+      gap: 18,
+      alignItems: "flex-start",
+      width: 411,
+      flexShrink: 0
+    }
+  }, /*#__PURE__*/React.createElement(__ds_scope.__ds_default_components_core_Kicker_am82ln$1jcif1q, {
+    tone: "dark"
+  }, signupTitle), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      flexDirection: "column",
+      gap: 8,
+      alignItems: "flex-start",
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("form", {
+    style: {
+      display: "flex",
+      flexDirection: "row",
+      gap: 12,
+      alignItems: "center",
+      alignSelf: "stretch"
+    },
+    onSubmit: e => e.preventDefault()
+  }, /*#__PURE__*/React.createElement("input", {
+    type: "email",
+    placeholder: "Your email",
+    "aria-label": "Your email",
+    style: {
+      width: 266,
+      height: 57,
+      padding: "12px 24px",
+      boxSizing: "border-box",
+      borderRadius: "var(--radius-pill)",
+      background: "var(--surface-dark)",
+      border: "1.5px solid var(--hairline-on-dark)",
+      outline: "none",
+      fontFamily: "var(--font-text)",
+      fontWeight: 500,
+      fontSize: 16,
+      color: "var(--text-on-dark-soft)"
+    }
+  }), /*#__PURE__*/React.createElement(__ds_scope.__ds_default_components_core_Button_51d4zy$1drnhg1, {
+    variant: "accent",
+    size: "card",
+    as: "button",
+    style: {
+      height: 57
+    }
+  }, "Sign up")), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: "var(--font-text)",
+      fontWeight: 500,
+      fontSize: 14,
+      lineHeight: "100%",
+      color: "var(--text-muted-on-dark)"
+    }
+  }, signupNote)))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      flexDirection: "row",
+      alignItems: "center",
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: "var(--font-text)",
+      fontWeight: 500,
+      fontSize: 14,
+      lineHeight: "100%",
+      color: "var(--text-muted-on-dark)"
+    }
+  }, copyright), /*#__PURE__*/React.createElement("span", {
+    style: {
+      flexGrow: 1
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      flexDirection: "row",
+      gap: 24,
+      alignItems: "center"
+    }
+  }, socials.map((s, i) => /*#__PURE__*/React.createElement("a", {
+    key: i,
+    href: s.href,
+    "aria-label": s.label,
+    style: {
+      display: "block",
+      width: 19.5,
+      height: 19.5,
+      color: "var(--text-muted-on-dark)"
+    }
+  }, /*#__PURE__*/React.createElement("img", {
+    src: basePath + "assets/icons/social-glyph.svg",
+    alt: "",
+    width: 19.5,
+    height: 19.5,
+    style: {
+      display: "block"
+    }
+  }))))));
+}
+Object.assign(__ds_scope, { Footer, __ds_default_components_chrome_Footer_75cnsm: Footer });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/chrome/Footer.jsx", error: String((e && e.message) || e) }); }
+
+__ds_scope.__ds_default_components_core_Wordmark_1k8ipq1$spcfzo = __ds_scope.__ds_default_components_core_Wordmark_1k8ipq1 !== undefined ? __ds_scope.__ds_default_components_core_Wordmark_1k8ipq1 : __ds_scope.Wordmark;
+
+__ds_scope.__ds_default_components_core_Kicker_am82ln$1t91nza = __ds_scope.__ds_default_components_core_Kicker_am82ln !== undefined ? __ds_scope.__ds_default_components_core_Kicker_am82ln : __ds_scope.Kicker;
+
+__ds_scope.__ds_default_components_core_Button_51d4zy$1no6qdl = __ds_scope.__ds_default_components_core_Button_51d4zy !== undefined ? __ds_scope.__ds_default_components_core_Button_51d4zy : __ds_scope.Button;
+
+// components/chrome/FooterMobile.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+const DEFAULT_COLUMNS = [{
+  title: "Site",
+  links: [{
+    label: "Products & Pricing",
+    href: "#"
+  }, {
+    label: "How It Works",
+    href: "#"
+  }, {
+    label: "About",
+    href: "#"
+  }, {
+    label: "Contact",
+    href: "#"
+  }]
+}, {
+  title: "Support",
+  links: [{
+    label: "FAQ",
+    href: "#"
+  }, {
+    label: "Request a sample",
+    href: "#"
+  }, {
+    label: "Privacy Policy & Terms",
+    href: "#"
+  }]
+}];
+function FooterMobile({
+  columns = DEFAULT_COLUMNS,
+  blurb = "Monthly print marketing for real estate agents. Something they can hold.",
+  contact = "(760) 407-4783  \u00b7  hello@toccala.com",
+  signupTitle = "Stay in touch",
+  copyright = "\u00a9 2026 Toccala. All rights reserved.",
+  ground,
+  basePath = "",
+  style,
+  ...rest
+}) {
+  return /*#__PURE__*/React.createElement("footer", _extends({
+    style: {
+      display: "flex",
+      flexDirection: "column",
+      gap: 40,
+      alignItems: "flex-start",
+      padding: "56px 24px 32px",
+      boxSizing: "border-box",
+      overflow: "hidden",
+      background: `url(${ground ?? basePath + "assets/img/footer-ground.jpg"}) center / cover no-repeat, var(--surface-dark)`,
+      ...style
+    }
+  }, rest), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      flexDirection: "column",
+      gap: 16,
+      alignItems: "flex-start"
+    }
+  }, /*#__PURE__*/React.createElement(__ds_scope.__ds_default_components_core_Wordmark_1k8ipq1$spcfzo, {
+    tone: "cream",
+    width: 129,
+    basePath: basePath
+  }), /*#__PURE__*/React.createElement("p", {
+    style: {
+      margin: 0,
+      fontFamily: "var(--font-text)",
+      fontWeight: 500,
+      fontSize: 16,
+      lineHeight: "var(--lh-body)",
+      color: "var(--text-on-dark-soft)",
+      textWrap: "pretty"
+    }
+  }, blurb), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: "var(--font-text)",
+      fontWeight: 500,
+      fontSize: 16,
+      lineHeight: "100%",
+      color: "var(--link-on-dark)"
+    }
+  }, contact)), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      flexDirection: "column",
+      gap: 18,
+      alignItems: "flex-start",
+      alignSelf: "stretch"
+    }
+  }, /*#__PURE__*/React.createElement(__ds_scope.__ds_default_components_core_Kicker_am82ln$1t91nza, {
+    tone: "dark"
+  }, signupTitle), /*#__PURE__*/React.createElement("form", {
+    style: {
+      display: "flex",
+      flexDirection: "column",
+      gap: 12,
+      alignSelf: "stretch"
+    },
+    onSubmit: e => e.preventDefault()
+  }, /*#__PURE__*/React.createElement("input", {
+    type: "email",
+    placeholder: "Your email",
+    "aria-label": "Your email",
+    style: {
+      height: 57,
+      padding: "12px 24px",
+      boxSizing: "border-box",
+      borderRadius: "var(--radius-pill)",
+      background: "var(--surface-dark)",
+      border: "1.5px solid var(--hairline-on-dark)",
+      outline: "none",
+      fontFamily: "var(--font-text)",
+      fontWeight: 500,
+      fontSize: 16,
+      color: "var(--text-on-dark-soft)"
+    }
+  }), /*#__PURE__*/React.createElement(__ds_scope.__ds_default_components_core_Button_51d4zy$1no6qdl, {
+    variant: "accent",
+    size: "card",
+    as: "button",
+    style: {
+      height: 57
+    }
+  }, "Sign up"))), columns.map(col => /*#__PURE__*/React.createElement("div", {
+    key: col.title,
+    style: {
+      display: "flex",
+      flexDirection: "column",
+      gap: 18,
+      alignItems: "flex-start"
+    }
+  }, /*#__PURE__*/React.createElement(__ds_scope.__ds_default_components_core_Kicker_am82ln$1t91nza, {
+    tone: "dark"
+  }, col.title), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      flexDirection: "column",
+      gap: 12,
+      alignItems: "flex-start"
+    }
+  }, col.links.map(l => /*#__PURE__*/React.createElement("a", {
+    key: l.label,
+    href: l.href,
+    style: {
+      fontFamily: "var(--font-text)",
+      fontWeight: 500,
+      fontSize: 16,
+      lineHeight: "100%",
+      color: "var(--text-on-dark)",
+      textDecoration: "none"
+    }
+  }, l.label))))), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: "var(--font-text)",
+      fontWeight: 500,
+      fontSize: 14,
+      lineHeight: "100%",
+      color: "var(--text-muted-on-dark)"
+    }
+  }, copyright));
+}
+Object.assign(__ds_scope, { FooterMobile, __ds_default_components_chrome_FooterMobile_1a1ns6m: FooterMobile });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/chrome/FooterMobile.jsx", error: String((e && e.message) || e) }); }
+
+__ds_scope.__ds_default_components_core_Wordmark_1k8ipq1$tvvtob = __ds_scope.__ds_default_components_core_Wordmark_1k8ipq1 !== undefined ? __ds_scope.__ds_default_components_core_Wordmark_1k8ipq1 : __ds_scope.Wordmark;
+
+__ds_scope.__ds_default_components_core_Button_51d4zy$jtiouo = __ds_scope.__ds_default_components_core_Button_51d4zy !== undefined ? __ds_scope.__ds_default_components_core_Button_51d4zy : __ds_scope.Button;
+
+// components/chrome/HeaderNav.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+const DEFAULT_LINKS = [{
+  label: "Products & Pricing",
+  href: "#"
+}, {
+  label: "How It Works",
+  href: "#"
+}, {
+  label: "About",
+  href: "#"
+}, {
+  label: "Contact",
+  href: "#"
+}, {
+  label: "(760) 407-4783",
+  href: "tel:+17604074783"
+}, {
+  label: "Log in",
+  href: "#"
+}];
+function HeaderNav({
+  links = DEFAULT_LINKS,
+  cta = "Get started",
+  ctaHref = "#",
+  basePath = "",
+  style,
+  ...rest
+}) {
+  return /*#__PURE__*/React.createElement("header", _extends({
+    style: {
+      display: "flex",
+      flexDirection: "row",
+      alignItems: "center",
+      height: "var(--header-h)",
+      padding: "0 var(--gutter-page)",
+      background: "var(--surface-page)",
+      boxSizing: "border-box",
+      overflow: "hidden",
+      ...style
+    }
+  }, rest), /*#__PURE__*/React.createElement(__ds_scope.__ds_default_components_core_Wordmark_1k8ipq1$tvvtob, {
+    tone: "green",
+    width: 150,
+    basePath: basePath
+  }), /*#__PURE__*/React.createElement("span", {
+    style: {
+      flexGrow: 1
+    }
+  }), /*#__PURE__*/React.createElement("nav", {
+    style: {
+      display: "flex",
+      flexDirection: "row",
+      alignItems: "center",
+      gap: 36
+    }
+  }, links.map(l => /*#__PURE__*/React.createElement("a", {
+    key: l.label,
+    href: l.href,
+    style: {
+      fontFamily: "var(--font-text)",
+      fontWeight: 500,
+      fontSize: 16,
+      lineHeight: "100%",
+      color: "var(--text-primary)",
+      textDecoration: "none",
+      whiteSpace: "nowrap"
+    },
+    onMouseEnter: e => {
+      e.currentTarget.style.color = "var(--link-on-light)";
+    },
+    onMouseLeave: e => {
+      e.currentTarget.style.color = "var(--text-primary)";
+    }
+  }, l.label)), /*#__PURE__*/React.createElement(__ds_scope.__ds_default_components_core_Button_51d4zy$jtiouo, {
+    size: "md",
+    href: ctaHref
+  }, cta)));
+}
+Object.assign(__ds_scope, { HeaderNav, __ds_default_components_chrome_HeaderNav_5ogaol: HeaderNav });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/chrome/HeaderNav.jsx", error: String((e && e.message) || e) }); }
+
+__ds_scope.__ds_default_components_core_Wordmark_1k8ipq1$1wei8ut = __ds_scope.__ds_default_components_core_Wordmark_1k8ipq1 !== undefined ? __ds_scope.__ds_default_components_core_Wordmark_1k8ipq1 : __ds_scope.Wordmark;
+
+// components/chrome/HeaderNavWireframeMobile.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function HeaderNavWireframeMobile({
+  basePath = "",
+  onMenu,
+  style,
+  ...rest
+}) {
+  return /*#__PURE__*/React.createElement("header", _extends({
+    style: {
+      display: "flex",
+      flexDirection: "row",
+      alignItems: "center",
+      justifyContent: "space-between",
+      height: 72,
+      padding: "0 24px",
+      background: "var(--surface-page)",
+      boxSizing: "border-box",
+      overflow: "hidden",
+      ...style
+    }
+  }, rest), /*#__PURE__*/React.createElement(__ds_scope.__ds_default_components_core_Wordmark_1k8ipq1$1wei8ut, {
+    tone: "green",
+    width: 120,
+    basePath: basePath
+  }), /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    "aria-label": "Open menu",
+    onClick: onMenu,
+    style: {
+      width: 44,
+      height: 44,
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "center",
+      gap: 5,
+      padding: 0,
+      background: "none",
+      border: 0,
+      cursor: "pointer"
+    }
+  }, [0, 1, 2].map(i => /*#__PURE__*/React.createElement("span", {
+    key: i,
+    style: {
+      display: "block",
+      width: 22,
+      height: 1.5,
+      background: "var(--text-primary)"
+    }
+  }))));
+}
+Object.assign(__ds_scope, { HeaderNavWireframeMobile, __ds_default_components_chrome_HeaderNavWireframeMobile_b56n8v: HeaderNavWireframeMobile });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/chrome/HeaderNavWireframeMobile.jsx", error: String((e && e.message) || e) }); }
+
 // components/decor/AccentCircle.jsx
 try { (() => {
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
@@ -490,7 +1224,7 @@ function TexturePanel({
 }) {
   return /*#__PURE__*/React.createElement("div", _extends({
     style: {
-      background: `url(${basePath}assets/img/texture-tile.png) top left / 440px 440px repeat`,
+      background: `url(${basePath}assets/img/texture-tile.png) top left / 220px 220px repeat`,
       ...style
     }
   }, rest), children);
@@ -594,7 +1328,7 @@ const VARIABLES = {
     }, {
       "name": "Palette/Paper",
       "type": "COLOR",
-      "value": "#FFF9F0",
+      "value": "#FFFDF8",
       "description": "Header ground, lighter near-white."
     }, {
       "name": "Palette/White",
@@ -641,6 +1375,11 @@ const VARIABLES = {
       "type": "COLOR",
       "value": "#ABD1CC",
       "description": "OFF-PALETTE. The one large disc in the source tile only."
+    }, {
+      "name": "Literal/GoldRing",
+      "type": "COLOR",
+      "value": "#D8AB43",
+      "description": "OFF-PALETTE. Sketch-ring stroke on the hero; brighter than Palette/Sun."
     }, {
       "name": "Semantic/Surface Canvas",
       "type": "COLOR",
@@ -907,7 +1646,7 @@ const VARIABLES = {
     }, {
       "name": "Family/Numeric",
       "type": "STRING",
-      "value": "Inter"
+      "value": "Wix Madefor Text"
     }]
   }]
 };
@@ -960,7 +1699,7 @@ const STYLES = {
     "fontSize": 56,
     "lineHeight": {
       "unit": "PERCENT",
-      "value": 100
+      "value": 110
     },
     "letterSpacing": {
       "unit": "PIXELS",
@@ -973,7 +1712,7 @@ const STYLES = {
     "fontSize": 42,
     "lineHeight": {
       "unit": "PERCENT",
-      "value": 100
+      "value": 110
     },
     "letterSpacing": {
       "unit": "PIXELS",
@@ -1389,7 +2128,11 @@ async function run() {
   console.log(log.join('\n'));
   figma.closePlugin(log.join(' · '));
 }
-run();
+
+// Only run inside Figma. This file also gets swept into the design system's compiled
+// bundle, where the `figma` global does not exist — without this guard every card in
+// the Design System tab logs "Can't find variable: figma".
+if (typeof figma !== 'undefined') run();
 })(); } catch (e) { __ds_ns.__errors.push({ path: "figma/setup-plugin/code.js", error: String((e && e.message) || e) }); }
 
 // ui_kits/brand-canvas/fonts-colors-band.jsx
@@ -1994,13 +2737,13 @@ function Statement() {
       fontFamily: "var(--font-display-cond)",
       fontWeight: 500,
       fontSize: 56,
-      lineHeight: 1,
+      lineHeight: 1.1,
       color: "var(--text-on-dark)"
     }
   }, "A secondary headline would look like this"), /*#__PURE__*/React.createElement("p", {
     style: {
       width: 514.082,
-      fontFamily: "var(--font-numeric)",
+      fontFamily: "var(--font-text)",
       fontWeight: 500,
       fontSize: 16,
       lineHeight: 1.4,
@@ -2017,11 +2760,35 @@ Object.assign(window, {
 });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "ui_kits/brand-canvas/statement.jsx", error: String((e && e.message) || e) }); }
 
+if (__ds_scope.__ds_default_components_core_Wordmark_1k8ipq1$1487l6k === undefined) __ds_scope.__ds_default_components_core_Wordmark_1k8ipq1$1487l6k = __ds_scope.__ds_default_components_core_Wordmark_1k8ipq1 !== undefined ? __ds_scope.__ds_default_components_core_Wordmark_1k8ipq1 : __ds_scope.Wordmark;
+if (__ds_scope.__ds_default_components_core_Kicker_am82ln$1jcif1q === undefined) __ds_scope.__ds_default_components_core_Kicker_am82ln$1jcif1q = __ds_scope.__ds_default_components_core_Kicker_am82ln !== undefined ? __ds_scope.__ds_default_components_core_Kicker_am82ln : __ds_scope.Kicker;
+if (__ds_scope.__ds_default_components_core_Button_51d4zy$1drnhg1 === undefined) __ds_scope.__ds_default_components_core_Button_51d4zy$1drnhg1 = __ds_scope.__ds_default_components_core_Button_51d4zy !== undefined ? __ds_scope.__ds_default_components_core_Button_51d4zy : __ds_scope.Button;
+if (__ds_scope.__ds_default_components_core_Wordmark_1k8ipq1$spcfzo === undefined) __ds_scope.__ds_default_components_core_Wordmark_1k8ipq1$spcfzo = __ds_scope.__ds_default_components_core_Wordmark_1k8ipq1 !== undefined ? __ds_scope.__ds_default_components_core_Wordmark_1k8ipq1 : __ds_scope.Wordmark;
+if (__ds_scope.__ds_default_components_core_Kicker_am82ln$1t91nza === undefined) __ds_scope.__ds_default_components_core_Kicker_am82ln$1t91nza = __ds_scope.__ds_default_components_core_Kicker_am82ln !== undefined ? __ds_scope.__ds_default_components_core_Kicker_am82ln : __ds_scope.Kicker;
+if (__ds_scope.__ds_default_components_core_Button_51d4zy$1no6qdl === undefined) __ds_scope.__ds_default_components_core_Button_51d4zy$1no6qdl = __ds_scope.__ds_default_components_core_Button_51d4zy !== undefined ? __ds_scope.__ds_default_components_core_Button_51d4zy : __ds_scope.Button;
+if (__ds_scope.__ds_default_components_core_Wordmark_1k8ipq1$tvvtob === undefined) __ds_scope.__ds_default_components_core_Wordmark_1k8ipq1$tvvtob = __ds_scope.__ds_default_components_core_Wordmark_1k8ipq1 !== undefined ? __ds_scope.__ds_default_components_core_Wordmark_1k8ipq1 : __ds_scope.Wordmark;
+if (__ds_scope.__ds_default_components_core_Button_51d4zy$jtiouo === undefined) __ds_scope.__ds_default_components_core_Button_51d4zy$jtiouo = __ds_scope.__ds_default_components_core_Button_51d4zy !== undefined ? __ds_scope.__ds_default_components_core_Button_51d4zy : __ds_scope.Button;
+if (__ds_scope.__ds_default_components_core_Wordmark_1k8ipq1$1wei8ut === undefined) __ds_scope.__ds_default_components_core_Wordmark_1k8ipq1$1wei8ut = __ds_scope.__ds_default_components_core_Wordmark_1k8ipq1 !== undefined ? __ds_scope.__ds_default_components_core_Wordmark_1k8ipq1 : __ds_scope.Wordmark;
+
+__ds_ns.CardQuote = __ds_scope.CardQuote;
+
 __ds_ns.FeatureItem = __ds_scope.FeatureItem;
 
 __ds_ns.PlanCard = __ds_scope.PlanCard;
 
+__ds_ns.Footer = __ds_scope.Footer;
+
+__ds_ns.FooterMobile = __ds_scope.FooterMobile;
+
+__ds_ns.HeaderNav = __ds_scope.HeaderNav;
+
+__ds_ns.HeaderNavWireframeMobile = __ds_scope.HeaderNavWireframeMobile;
+
+__ds_ns.Badge = __ds_scope.Badge;
+
 __ds_ns.Button = __ds_scope.Button;
+
+__ds_ns.Chip = __ds_scope.Chip;
 
 __ds_ns.Divider = __ds_scope.Divider;
 

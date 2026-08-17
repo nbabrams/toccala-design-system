@@ -64,7 +64,7 @@ A single warm palette, no light/dark theming. Twelve named Color styles — thes
 | `--blueprint` | `#6377AE` | rare cool accent |
 | `--ink` | `#201B17` | the near-black footer ground. Warmer than pure black; never `#000` |
 | `--parchment` | `#F7F0E6` | page ground, and text on dark |
-| `--paper` | `#FFF9F0` | header ground, the lighter near-white |
+| `--paper` | `#FFFDF8` | header ground, the lighter near-white |
 | `--white` | `#FFFFFF` | true white |
 
 A handful of off-palette values appear in the source and are kept as `--raw-*` **source literals** (rust, salmon, sand, cream, deep parchment, two stones) purely so the Brand Canvas recreation stays exact. New work uses the palette.
@@ -77,7 +77,8 @@ Three faces, three jobs, no exceptions.
 - **Display: Optima nova LT Pro**. The whole heading ladder Display→H5 — **112 / 72 / 56 / 48 / 40 / 32** desktop, **48 / 42 / 36 / 32** mobile — is set in the **Medium Condensed** cut (`--font-display-cond`), which is what the source file uses. The price (54) and the 120px step numerals are condensed too. Only the **H6 eyebrow (18, Demi)** uses the regular width via `--font-display`. Flared humanist stems, and **flush `100%` leading** at every heading size — lines stack tight, with no extra air between them.
 - **Text: Wix Madefor Text** (Medium 500 mostly, SemiBold 600 for micro-labels). All body copy, buttons, links, feature lines. Leading `1.4`. Scale: 24 / 20 / 18 / 16 / 14 / 12. **Every button label is 18** (Body L) at every size.
 - **Script: Seaweed Script** (Regular 400, 24–34px). Accents only. Never a heading, never body.
-- **Inter** appears in a supporting role only: the muted body block on the green statement band. (The 120px step numerals are Optima nova LT Pro Condensed — the source reconstruction read them as Inter, corrected here.)
+
+**Three faces, and only three.** Optima nova LT Pro, Wix Madefor Text, Seaweed Script. Everything set in the system resolves to one of those — there is no fourth face and no supporting sans. Small numeric labels (specimen captions, measurements) use Wix Madefor Text, not a separate face.
 
 Headlines are set flush left and allowed to be enormous relative to the column (112px headline over a 520px subhead). Letter-spacing is default everywhere *except* caps labels (`3px` / `2.5px`) and the big numerals (`-2%`).
 
@@ -131,7 +132,7 @@ All four faces are the real thing — no substitutions.
 
 - **Optima nova LT Pro** (display) is served from the user's **Adobe Fonts kit `tcs2wbu`** (`https://use.typekit.net/tcs2wbu.css`). `tokens/fonts.css` aliases Adobe's `optima-nova-lt-pro` family to the source file's own family name so `--font-display` resolves directly. Ships Medium 500, Demi 600, Bold 700 and all three italics, plus `--font-display-cond` for the condensed cut.
   - **Two caveats.** The kit is **domain-locked** — if display type falls back to Georgia on a new host, add that domain to kit `tcs2wbu` in Adobe Fonts. And the kit carries only **one condensed weight (500)**, so the source's *Demi Condensed* renders as Medium Condensed; add it to the kit if you need it.
-- **Wix Madefor Text**, **Seaweed Script** and **Inter** load from Google Fonts.
+- **Wix Madefor Text** and **Seaweed Script** load from Google Fonts.
 
 ---
 

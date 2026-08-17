@@ -1,5 +1,8 @@
 import * as React from "react";
 
+/* INTENTIONAL ADDITION — not a Figma kit component. The source sets the handwritten
+ * aside as loose text; wrapped to keep the one-per-view rule. Do not rename. */
+
 /**
  * Handwritten Seaweed Script accent — one short phrase per view, often slightly rotated.
  */

@@ -13,23 +13,25 @@
 --blueprint:#6377AE;
 --ink:#201B17;
 --parchment:#F7F0E6;
---paper:#FFF9F0;
+--paper:#FFFDF8;      /* Palette/Paper. Page + card ground. */
 --white:#FFFFFF;
 
 /* --- Source literals (not palette) --- */
 --raw-rust:#A93F2B;
 --raw-salmon:#EA9F84;
 --raw-sand:#F5EDE0;
---raw-cream:#FFFDF8;
+--raw-cream:var(--paper); /* was a duplicate of Paper (#FFFDF8) — kept as an alias */
 --raw-parchment-deep:#E7DCC6;
 --raw-ink-pure:#141414;
 --raw-stone-mid:#6E675E;
 --raw-stone-dark:#3A362F;
+--raw-mint:#ABD1CC;        /* Literal/Mint — cool tint, dark-band accents */
+--raw-gold-ring:#D8AB43;   /* sketch-ring stroke on the hero; brighter than Sun */
 
 /* --- Semantic surfaces --- */
 --surface-canvas:var(--parchment);
 --surface-page:var(--paper);
---surface-card:var(--raw-cream);
+--surface-card:var(--paper);  /* same ground as the page — cards separate by shadow, not fill */
 --surface-dark:var(--pine);
 --surface-ink:var(--ink);
 

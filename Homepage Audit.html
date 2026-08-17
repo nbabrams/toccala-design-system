@@ -1,0 +1,123 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Toccala — Homepage vs. Design System audit</title><link rel="stylesheet" href="styles.css"><style>
+body{margin:0;background:var(--surface-canvas);color:var(--text-primary);font-family:var(--font-text);font-weight:500}
+.doc{max-width:920px;margin:0 auto;padding:80px 64px 120px}
+h1{margin:0 0 6px;font-family:var(--font-display-cond);font-weight:500;font-size:var(--fs-h2);line-height:var(--lh-h2)}
+.sub{margin:0 0 8px;font-size:20px;line-height:1.4;color:var(--raw-stone-mid);max-width:620px;text-wrap:pretty}
+.meta{margin:0 0 56px;font-family:var(--font-text);font-size:12px;color:var(--raw-stone-mid)}
+h2{margin:56px 0 4px;font-family:var(--font-display);font-weight:600;font-size:18px;letter-spacing:3px;text-transform:uppercase;color:var(--text-kicker)}
+h2+p.lede{margin:0 0 22px;font-size:16px;line-height:1.5;color:var(--raw-stone-mid);max-width:640px;text-wrap:pretty}
+.item{display:grid;grid-template-columns:26px 1fr;gap:0 16px;padding:18px 0;border-top:1px solid var(--hairline)}
+.item:last-child{border-bottom:1px solid var(--hairline)}
+.num{font-family:var(--font-text);font-size:12px;color:var(--raw-stone-mid);padding-top:4px}
+.item h3{margin:0 0 6px;font-family:var(--font-display-cond);font-weight:500;font-size:26px;line-height:1.15}
+.item p{margin:0 0 8px;font-size:15px;line-height:1.55;max-width:620px;text-wrap:pretty}
+.tag{display:inline-block;font-family:var(--font-text);font-size:10px;letter-spacing:.08em;text-transform:uppercase;padding:4px 9px;border-radius:var(--radius-pill);margin-bottom:8px}
+.fixed{background:var(--pine);color:var(--parchment)}
+.ask{background:var(--brick);color:var(--parchment)}
+.gap{background:var(--sun);color:var(--pine)}
+.ok{background:color-mix(in srgb, var(--sage) 55%, transparent);color:var(--pine)}
+code{font-family:var(--font-text);font-size:12.5px;background:rgba(30,61,52,.07);padding:2px 5px;border-radius:var(--radius-xs)}
+.cmp{display:flex;gap:10px;align-items:center;margin:10px 0 2px;flex-wrap:wrap}
+.chip{display:flex;gap:8px;align-items:center;font-family:var(--font-text);font-size:11px;color:var(--raw-stone-mid)}
+.chip i{width:26px;height:26px;border-radius:50%;border:1px solid var(--swatch-ring);display:block}
+.arrow{color:var(--raw-stone-mid);font-size:13px}
+ul{margin:6px 0 0;padding-left:18px}li{font-size:15px;line-height:1.55;margin-bottom:4px;max-width:600px;text-wrap:pretty}
+a{color:var(--link-on-light)}a:hover{color:var(--clay)}
+.note{margin-top:56px;padding:22px 24px;background:var(--surface-card);border-radius:var(--radius-lg);box-shadow:var(--shadow-card)}
+.note p{margin:0;font-size:15px;line-height:1.55;text-wrap:pretty}
+</style></head><body><div class="doc">
+
+<h1>Homepage vs. the design system</h1>
+<p class="sub">Audit of the client-approved homepage (frame 01.00, node 2008:2564) against the Toccala Design System, so secondary pages inherit one consistent set of rules.</p>
+<p class="meta">17 Aug 2026 · source: Toccala — Homepage.fig · 79 variables, 6 component sets, 11 standalone components read</p>
+
+<h2>Headline</h2>
+<p class="lede">The system aligns closely, as you expected — all 12 palette colours, the radius scale, the spacing scale and the semantic aliases match the file exactly. Four real discrepancies, all now corrected. The bigger issue is not drift: it is that the chrome every secondary page needs (nav, footer, badge, chip, quote card) is in the homepage but not in the system.</p>
+
+<h2>Corrected</h2>
+<p class="lede">The approved homepage was treated as the source of truth.</p>
+
+<div class="item"><div class="num">01</div><div>
+<span class="tag fixed">Fixed</span>
+<h3>Paper was 4 units off, and duplicated</h3>
+<p>The system had <code>--paper: #FFF9F0</code> plus a second near-white <code>--raw-cream: #FFFDF8</code>. The file has one: <code>Palette/Paper = #FFFDF8</code> — and that is what the homepage actually paints on the header, hero, pricing band and sample band. <code>#FFF9F0</code> appears nowhere in the approved design.</p>
+<div class="cmp"><span class="chip"><i style="background:#FFF9F0"></i>#FFF9F0 was</span><span class="arrow">→</span><span class="chip"><i style="background:#FFFDF8"></i>#FFFDF8 now</span></div>
+<p><code>--raw-cream</code> now aliases <code>--paper</code>, and <code>--surface-card</code> points at Paper. Updated in the tokens, the wordmark asset, <code>figma/variables.json</code>, the setup plugin, the README and the Brand Canvas template — which was rendering the two whites as two separate swatches.</p>
+</div></div>
+
+<div class="item"><div class="num">02</div><div>
+<span class="tag fixed">Fixed</span>
+<h3>Paper texture rendered at double scale</h3>
+<p>The tile is 440×440 natively and the system repeated it at native size. The homepage repeats it at <code>220px 220px</code> on both texture bands — half size, so the grain is twice as fine. The system's bands read visibly coarser than the approved page. Now 220px in <code>--texture-tile-size</code>, <code>TexturePanel</code>, the template and the docs.</p>
+</div></div>
+
+<div class="item"><div class="num">03</div><div>
+<span class="tag fixed">Fixed</span>
+<h3>Two file colours were undocumented</h3>
+<p><code>#D8AB43</code> — the sketch-ring stroke on the hero, 6 uses, brighter than Palette/Sun — and <code>#ABD1CC</code> (Literal/Mint) existed in the file but not in <code>tokens/colors.css</code>. Both added as literals and registered in the Figma variable payload, so they stop being reinvented by hand.</p>
+</div></div>
+
+<div class="item"><div class="num">04</div><div>
+<span class="tag fixed">Fixed</span>
+<h3>Section rhythm existed nowhere</h3>
+<p>The homepage has a clear vertical system — 96px default band, 112px generous, 64px page gutter, 96px on texture bands, 16px section-head stack — but the system carried only two gutter tokens, so a secondary page had nothing to follow. Added <code>--section-y*</code>, <code>--section-gap*</code>, <code>--section-head-gap</code>, <code>--header-h</code> and <code>--content-max: 1312px</code>, plus a "Section rhythm" card documenting all ten bands and the ground-alternation rule.</p>
+</div></div>
+
+<h2>Gaps that will bite on secondary pages</h2>
+<p class="lede">Not drift — genuinely missing. These are the pieces every page except the homepage needs, and they only exist as homepage layers today.</p>
+
+<div class="item"><div class="num">05</div><div>
+<span class="tag gap">Missing</span>
+<h3>Nav and footer are not components</h3>
+<p>Header: 104px tall, 64px side gutters, wordmark 150×36.685, nav gap 36, md button 173×61. Footer: 426px, padding 64/64/40, gap 64, photo ground, 329px brand column, link columns at 18px gap with 12px between links, 72px between columns. The file also carries <code>Header-Nav-Wireframe-Mobile</code> and <code>09-Footer-Wireframe-Mobile</code>. Until these are components, every secondary page rebuilds them and they drift apart.</p>
+</div></div>
+
+<div class="item"><div class="num">06</div><div>
+<span class="tag gap">Missing</span>
+<h3>Badge, Chip, Card / Quote, 4-col plan card</h3>
+<ul>
+<li><strong>Badge</strong> — pill, Brick ground, Parchment label, 8×16 padding.</li>
+<li><strong>Chip component</strong> — in the file, absent from the system.</li>
+<li><strong>Card / Quote</strong> — the testimonial card, used twice on the homepage.</li>
+<li><strong>Plan — 4 Col</strong> — a plan-card variant the system's PlanCard doesn't cover.</li>
+</ul>
+</div></div>
+
+<h2>Needs your call</h2>
+
+<div class="item"><div class="num">07</div><div>
+<span class="tag ask">Decision</span>
+<h3>The file has no text styles at all</h3>
+<p>Its Type collection is five font-family strings — no sizes, no leading. There are zero Figma text styles. So the type ladder lives only in the system's CSS and in the <code>figma/text-styles.json</code> I authored; the delivery file cannot enforce it. Publish those text styles into the Figma library or secondary-page type will drift the moment someone sets a heading by hand.</p>
+</div></div>
+
+<div class="item"><div class="num">08</div><div>
+<span class="tag ask">Decision</span>
+<h3>Two near-identical oranges</h3>
+<p>The hero accent circle is <code>#D96F4A</code>; Palette/Clay is <code>#D76B45</code> — two units apart, indistinguishable on screen. This is drift inside the Figma file: the circle isn't bound to the Clay variable. Recommend binding it rather than adding a token. Say the word and I'll leave the system as is.</p>
+</div></div>
+
+<div class="item"><div class="num">09</div><div>
+<span class="tag ask">Decision</span>
+<h3>TextLink is 17px on light, 18px on dark</h3>
+<p>That 1px difference is in the source and the system copies it faithfully. Almost certainly unintentional. Recommend 18px for both — but it's a visible change to the approved page, so it's yours to call.</p>
+</div></div>
+
+<h2>Verified clean</h2>
+<div class="item"><div class="num">—</div><div>
+<span class="tag ok">Matches</span>
+<h3>No action needed</h3>
+<ul>
+<li>All 12 palette colours and 20 semantic aliases — exact.</li>
+<li>Radius scale: XS 4, MD 12, LG 16, Pill 999, rule 1.5 — exact, and the file has no SM or XL, matching the system.</li>
+<li>Spacing scale: all 27 gap values — exact.</li>
+<li>Button geometry: pill, gap 12, lg/md 18×38, card 16×34, Pine on Sand — exact.</li>
+<li>Kicker Hero: Optima Demi 24 uppercase Pine — exact. Divider: 1.5px at 25% both tones — exact.</li>
+<li>Card shadow <code>0 10px 30px rgba(82,66,41,.18)</code> — exact.</li>
+<li>Fonts: Optima nova LT Pro, Wix Madefor Text, Seaweed Script — the condensed fallback chain already resolves correctly.</li>
+</ul>
+</div></div>
+
+<div class="note"><p><strong>One read to be aware of.</strong> The extraction rendered many text layers in a 12px substitute face — a font-substitution artifact, not the design. Type sizes in the homepage frame are therefore unverified from this file, so the type findings above rest on the components (where fonts did resolve) and the token collections, not on the frame's text nodes. If you want the type ladder confirmed against the approved page, dev-mode values for the hero H1 and section H2s would close it.</p></div>
+
+</div></body></html>

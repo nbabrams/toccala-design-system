@@ -76,7 +76,7 @@ const VARIABLES = {
         {
           "name": "Palette/Paper",
           "type": "COLOR",
-          "value": "#FFF9F0",
+          "value": "#FFFDF8",
           "description": "Header ground, lighter near-white."
         },
         {
@@ -132,6 +132,12 @@ const VARIABLES = {
           "type": "COLOR",
           "value": "#ABD1CC",
           "description": "OFF-PALETTE. The one large disc in the source tile only."
+        },
+        {
+          "name": "Literal/GoldRing",
+          "type": "COLOR",
+          "value": "#D8AB43",
+          "description": "OFF-PALETTE. Sketch-ring stroke on the hero; brighter than Palette/Sun."
         },
         {
           "name": "Semantic/Surface Canvas",
@@ -469,7 +475,7 @@ const VARIABLES = {
         {
           "name": "Family/Numeric",
           "type": "STRING",
-          "value": "Inter"
+          "value": "Wix Madefor Text"
         }
       ]
     }
@@ -529,7 +535,7 @@ const STYLES = {
       "fontSize": 56,
       "lineHeight": {
         "unit": "PERCENT",
-        "value": 100
+        "value": 110
       },
       "letterSpacing": {
         "unit": "PIXELS",
@@ -543,7 +549,7 @@ const STYLES = {
       "fontSize": 42,
       "lineHeight": {
         "unit": "PERCENT",
-        "value": 100
+        "value": 110
       },
       "letterSpacing": {
         "unit": "PIXELS",
@@ -959,4 +965,7 @@ async function run() {
   figma.closePlugin(log.join(' · '));
 }
 
-run();
+// Only run inside Figma. This file also gets swept into the design system's compiled
+// bundle, where the `figma` global does not exist — without this guard every card in
+// the Design System tab logs "Can't find variable: figma".
+if (typeof figma !== 'undefined') run();

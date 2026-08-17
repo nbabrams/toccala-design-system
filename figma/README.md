@@ -26,7 +26,6 @@ The setup plugin **skips any text style whose font isn't available** and lists w
 | **Optima nova LT Pro** | Adobe Fonts kit `tcs2wbu`. Activate it in Creative Cloud desktop so Figma sees it locally. Needs Medium, Demi, Bold, **Medium Condensed** and **Demi Condensed** |
 | **Wix Madefor Text** | Google Fonts — available in Figma by default |
 | **Seaweed Script** | Google Fonts — available in Figma by default |
-| **Inter** | Available in Figma by default |
 
 Optima Condensed carries the whole heading scale (Display → H5), so if it's missing, everything looks wrong rather than slightly off.
 

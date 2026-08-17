@@ -8,11 +8,11 @@
    NOTE: the kit is domain-locked to the domains registered on tcs2wbu — if display
    type falls back to serif on a new host, add that domain to the kit.
 
-   TEXT / SCRIPT / NUMERIC: Wix Madefor Text, Seaweed Script and Inter are the
-   genuine faces from the source, loaded from Google Fonts. */
+   TEXT / SCRIPT: Wix Madefor Text and Seaweed Script are the
+   genuine text faces from the source, loaded from Google Fonts. Three faces total. */
 
 @import url("https://use.typekit.net/tcs2wbu.css");
-@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:wght@400;500;600;700&family=Seaweed+Script&family=Inter:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:wght@400;500;600;700&family=Seaweed+Script&display=swap');
 
 @font-face{font-family:"Optima nova LT Pro";src:url("https://use.typekit.net/af/43a22a/0000000000000000775aaece/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff2"),url("https://use.typekit.net/af/43a22a/0000000000000000775aaece/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff");font-display:swap;font-style:normal;font-weight:500}
 @font-face{font-family:"Optima nova LT Pro";src:url("https://use.typekit.net/af/00c912/0000000000000000775aaec2/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3") format("woff2"),url("https://use.typekit.net/af/00c912/0000000000000000775aaec2/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3") format("woff");font-display:swap;font-style:italic;font-weight:500}

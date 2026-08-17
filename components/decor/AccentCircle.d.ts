@@ -1,5 +1,8 @@
 import * as React from "react";
 
+/* INTENTIONAL ADDITION — not a Figma kit component. The source has flat discs as raw
+ * ellipse fills; wrapped so a disc can be placed by size and tone. Do not rename. */
+
 /**
  * Flat colour disc used as a large background shape and as the 56px swatch dot.
  */

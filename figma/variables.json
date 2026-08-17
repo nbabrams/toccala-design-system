@@ -71,7 +71,7 @@
         {
           "name": "Palette/Paper",
           "type": "COLOR",
-          "value": "#FFF9F0",
+          "value": "#FFFDF8",
           "description": "Header ground, lighter near-white."
         },
         {
@@ -127,6 +127,12 @@
           "type": "COLOR",
           "value": "#ABD1CC",
           "description": "OFF-PALETTE. The one large disc in the source tile only."
+        },
+        {
+          "name": "Literal/GoldRing",
+          "type": "COLOR",
+          "value": "#D8AB43",
+          "description": "OFF-PALETTE. Sketch-ring stroke on the hero; brighter than Palette/Sun."
         },
         {
           "name": "Semantic/Surface Canvas",
@@ -464,7 +470,7 @@
         {
           "name": "Family/Numeric",
           "type": "STRING",
-          "value": "Inter"
+          "value": "Wix Madefor Text"
         }
       ]
     }

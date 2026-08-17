@@ -17,6 +17,7 @@
           {
             "group": [
               "components/cards/**",
+              "components/chrome/**",
               "components/core/**",
               "components/decor/**",
               "figma/setup-plugin/**",
@@ -38,12 +39,20 @@
         "message": "Raw px value — use a design-system spacing token via var()."
       },
       {
-        "selector": "Literal[value=/font-family\\s*:\\s*(?!['\\\"]?(?:Optima nova LT Pro|Optima nova LT Pro Cond|Wix Madefor Text|Seaweed Script|Inter))/i]",
-        "message": "Font not provided by the design system. Available: Optima nova LT Pro, Optima nova LT Pro Cond, Wix Madefor Text, Seaweed Script, Inter."
+        "selector": "Literal[value=/font-family\\s*:\\s*(?!['\\\"]?(?:Optima nova LT Pro|Optima nova LT Pro Cond|Wix Madefor Text|Seaweed Script))/i]",
+        "message": "Font not provided by the design system. Available: Optima nova LT Pro, Optima nova LT Pro Cond, Wix Madefor Text, Seaweed Script."
       },
       {
         "selector": "JSXOpeningElement[name.name='AccentCircle'] > JSXAttribute > JSXIdentifier[name!=/^(?:size|fill|ring|key|ref|className|style|children)$/]",
         "message": "<AccentCircle> doesn't accept that prop. Declared props: size, fill, ring."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Badge'] > JSXAttribute > JSXIdentifier[name!=/^(?:tone|children|key|ref|className|style|children)$/]",
+        "message": "<Badge> doesn't accept that prop. Declared props: tone, children."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Badge'] > JSXAttribute[name.name='tone'] > Literal[value!=/^(?:accent|dark|sun)$/]",
+        "message": "<Badge> tone must be one of 'accent' | 'dark' | 'sun'."
       },
       {
         "selector": "JSXOpeningElement[name.name='Button'] > JSXAttribute > JSXIdentifier[name!=/^(?:variant|size|as|href|children|key|ref|className|style|children)$/]",
@@ -58,6 +67,18 @@
         "message": "<Button> size must be one of 'md' | 'lg' | 'card'."
       },
       {
+        "selector": "JSXOpeningElement[name.name='CardQuote'] > JSXAttribute > JSXIdentifier[name!=/^(?:quote|attribution|width|key|ref|className|style|children)$/]",
+        "message": "<CardQuote> doesn't accept that prop. Declared props: quote, attribution, width."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Chip'] > JSXAttribute > JSXIdentifier[name!=/^(?:tone|children|key|ref|className|style|children)$/]",
+        "message": "<Chip> doesn't accept that prop. Declared props: tone, children."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Chip'] > JSXAttribute[name.name='tone'] > Literal[value!=/^(?:light|dark|solid)$/]",
+        "message": "<Chip> tone must be one of 'light' | 'dark' | 'solid'."
+      },
+      {
         "selector": "JSXOpeningElement[name.name='Divider'] > JSXAttribute > JSXIdentifier[name!=/^(?:tone|width|key|ref|className|style|children)$/]",
         "message": "<Divider> doesn't accept that prop. Declared props: tone, width."
       },
@@ -68,6 +89,22 @@
       {
         "selector": "JSXOpeningElement[name.name='FeatureItem'] > JSXAttribute > JSXIdentifier[name!=/^(?:children|key|ref|className|style|children)$/]",
         "message": "<FeatureItem> doesn't accept that prop. Declared props: children."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='FooterColumn'] > JSXAttribute > JSXIdentifier[name!=/^(?:title|links|key|ref|className|style|children)$/]",
+        "message": "<FooterColumn> doesn't accept that prop. Declared props: title, links."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='FooterMobile'] > JSXAttribute > JSXIdentifier[name!=/^(?:columns|blurb|contact|signupTitle|copyright|ground|basePath|key|ref|className|style|children)$/]",
+        "message": "<FooterMobile> doesn't accept that prop. Declared props: columns, blurb, contact, signupTitle, copyright, ground, basePath."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='HeaderNavLink'] > JSXAttribute > JSXIdentifier[name!=/^(?:label|href|key|ref|className|style|children)$/]",
+        "message": "<HeaderNavLink> doesn't accept that prop. Declared props: label, href."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='HeaderNavWireframeMobile'] > JSXAttribute > JSXIdentifier[name!=/^(?:basePath|onMenu|key|ref|className|style|children)$/]",
+        "message": "<HeaderNavWireframeMobile> doesn't accept that prop. Declared props: basePath, onMenu."
       },
       {
         "selector": "JSXOpeningElement[name.name='Kicker'] > JSXAttribute > JSXIdentifier[name!=/^(?:tone|as|children|key|ref|className|style|children)$/]",
@@ -146,13 +183,34 @@
       "AccentCircle": {
         "replaces": []
       },
+      "Badge": {
+        "replaces": []
+      },
       "Button": {
+        "replaces": []
+      },
+      "CardQuote": {
+        "replaces": []
+      },
+      "Chip": {
         "replaces": []
       },
       "Divider": {
         "replaces": []
       },
       "FeatureItem": {
+        "replaces": []
+      },
+      "FooterColumn": {
+        "replaces": []
+      },
+      "FooterMobile": {
+        "replaces": []
+      },
+      "HeaderNavLink": {
+        "replaces": []
+      },
+      "HeaderNavWireframeMobile": {
         "replaces": []
       },
       "Kicker": {
@@ -192,13 +250,13 @@
       "--bullet-size",
       "--clay",
       "--container-max",
+      "--content-max",
       "--dur-base",
       "--dur-fast",
       "--dur-slow",
       "--ease-warm",
       "--font-display",
       "--font-display-cond",
-      "--font-numeric",
       "--font-script",
       "--font-text",
       "--fs-body-l",
@@ -235,10 +293,12 @@
       "--gutter-page",
       "--hairline",
       "--hairline-on-dark",
+      "--header-h",
       "--ink",
       "--lh-body",
       "--lh-display",
       "--lh-flush",
+      "--lh-h2",
       "--lh-heading",
       "--lh-script",
       "--link-on-dark",
@@ -255,7 +315,9 @@
       "--radius-round",
       "--radius-xs",
       "--raw-cream",
+      "--raw-gold-ring",
       "--raw-ink-pure",
+      "--raw-mint",
       "--raw-parchment-deep",
       "--raw-rust",
       "--raw-salmon",
@@ -264,6 +326,15 @@
       "--raw-stone-mid",
       "--rule-weight",
       "--sage",
+      "--section-gap",
+      "--section-gap-lg",
+      "--section-gap-sm",
+      "--section-gap-xl",
+      "--section-head-gap",
+      "--section-y",
+      "--section-y-hero",
+      "--section-y-loose",
+      "--section-y-tight",
       "--shadow-card",
       "--space-10",
       "--space-11",
@@ -332,6 +403,8 @@
       "--raw-ink-pure": "color",
       "--raw-stone-mid": "color",
       "--raw-stone-dark": "color",
+      "--raw-mint": "color",
+      "--raw-gold-ring": "color",
       "--surface-canvas": "color",
       "--surface-page": "color",
       "--surface-card": "color",
@@ -359,7 +432,6 @@
       "--font-display-cond": "font",
       "--font-text": "font",
       "--font-script": "font",
-      "--font-numeric": "font",
       "--fw-display-medium": "font",
       "--fw-display-demi": "font",
       "--fw-display-bold": "font",
@@ -390,6 +462,7 @@
       "--fs-price": "spacing",
       "--fs-plan-label": "spacing",
       "--lh-display": "other",
+      "--lh-h2": "other",
       "--lh-heading": "other",
       "--lh-body": "other",
       "--lh-flush": "other",
@@ -423,6 +496,17 @@
       "--gutter-page": "spacing",
       "--gutter-dark": "spacing",
       "--container-max": "spacing",
+      "--content-max": "spacing",
+      "--section-y-tight": "spacing",
+      "--section-y": "spacing",
+      "--section-y-loose": "spacing",
+      "--section-y-hero": "spacing",
+      "--section-gap-sm": "spacing",
+      "--section-gap": "spacing",
+      "--section-gap-lg": "spacing",
+      "--section-gap-xl": "spacing",
+      "--section-head-gap": "spacing",
+      "--header-h": "spacing",
       "--radius-xs": "radius",
       "--radius-md": "radius",
       "--radius-lg": "radius",
@@ -443,7 +527,6 @@
       "--dur-slow": "other"
     },
     "fontFamilies": [
-      "Inter",
       "Optima nova LT Pro",
       "Optima nova LT Pro Cond",
       "Seaweed Script",

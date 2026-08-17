@@ -1,40 +1,44 @@
 repo: nbabrams/toccala-design-system
 branch: main
 
+## Pending push
+
+date: 2026-08-14T00:00:00Z
+change: H2 leading 100% → 110% (`--lh-h2:1.1`). Touched: `tokens/typography.css`, `tokens/base.css`, `figma/text-styles.json`, `figma/setup-plugin/code.js`, `ui_kits/typography-sheet/index.html`, `ui_kits/brand-canvas/statement.jsx`, `guidelines/type-mobile.card.html`. Not yet on `main` — export the project and push (Claude has read access only).
+
 ## Last sync
 
-date: 2026-08-13T18:45:22Z
-direction: read-only comparison (the repo is populated by the user's manual export; Claude cannot push)
+date: 2026-08-13T19:19:24Z
+commit: 060f0d267f56
+direction: user exports from this project and pushes manually (Claude reads the repo to detect drift; it cannot push)
 
 ### Updated in this project
-- Repo renamed `toccata-design-system` → `toccala-design-system`; `repo:` line updated to match the brand spelling.
-- Confirmed Fable's report: the repo's `figma/variables.json` still aliases `Semantic/Accent` → `Palette/Clay`. Fixed locally to `Palette/Brick`, and the plugin payload rebuilt to match.
-- Compared repo `tokens/` against local. The repo carries the palette rename, `--clay:#D76B45` and `--accent:var(--brick)`, but **not** the 100% display leading.
-- Repo is one edit-round behind: `--lh-display` is still `1.1` there, and `.t-h2` / `.t-h5` / `.t-h6` still resolve to `--lh-heading`.
+- Verified the manual push: `main` is level with this project. No drift in tokens, components, cards, templates or the Figma layer.
+- `uploads/` removed upstream and a `.gitignore` added — repo hygiene items closed.
+- `tokens/typography.css` upstream carries `--lh-display:1` and `.t-h2` / `.t-h5` / `.t-h6` on `--lh-display`.
+- `figma/variables.json` upstream aliases `Semantic/Accent` → `Palette/Brick`; `Semantic/Bullet` correctly stays on `Palette/Clay`.
 
-## Drift — repo is behind on these files
+## Verified at this commit
 
-Everything below is current in this project and stale in `main` as of the sync above.
-
-| File | What's missing upstream |
+| Check | State |
 | --- | --- |
-| `tokens/typography.css` | `--lh-display:1` (was 1.1); `.t-h2`/`.t-h5`/`.t-h6` moved onto `--lh-display` |
-| `figma/variables.json` | `Semantic/Accent` → `Palette/Brick` (+ contrast note in its description) |
-| `figma/setup-plugin/code.js` | payload regenerated from both manifests |
-| `figma/text-styles.json` | all display/heading rows at `lineHeight` 100% |
-| `ui_kits/brand-canvas/hero.jsx` | headline 112/112 |
-| `ui_kits/brand-canvas/statement.jsx` | headline 56/56 |
-| `ui_kits/typography-sheet/index.html` | flush leading, `· 100%` labels, `main{width:853.802px}` unit fix |
-| `templates/brand-canvas/BrandCanvas.dc.html` | headline 112/112, statement 56/56, kicker 24/24 |
-| `guidelines/type-display.card.html` | `gap:2px` unit fix, leading |
-| `guidelines/type-mobile.card.html` | "100% leading" subtitle |
-| `readme.md`, `README.md` | flush-leading rule in VISUAL FOUNDATIONS |
+| Display / heading leading | `--lh-display:1` — all 11 heading rows flush |
+| Type ladder | 112 / 72 / 56 / 48 / 40 / 32 / 18 desktop · 48 / 42 / 36 / 32 mobile |
+| Clay | `#D76B45` (3.30:1 on Paper) |
+| Accent button | `--accent:var(--brick)` and `Semantic/Accent` → `Palette/Brick` (4.73:1) |
+| Figma plugin payload | regenerated from both manifests, agrees with `variables.json` |
+| File count | 120 (`uploads/` removed, `.gitignore` added) |
 
 ## Repo hygiene
 
-- **`readme.md` and `README.md` both exist in this project** but only `README.md` is committed. Git is case-sensitive and macOS is not, so keeping both is a collision risk. They are byte-identical by construction — consider committing only `README.md`.
-- **`uploads/` is committed** (two user screenshots and the original texture JPEG). Not referenced by any card or component; safe to gitignore.
-- `_ds_bundle.js`, `_ds_manifest.json`, `_adherence.oxlintrc.json` are generated on every turn. Committed intentionally so Claude Fable and other file-reading agents see the compiled bundle without running the compiler; expect them in every diff.
+- `uploads/` deleted and gitignored (2026-08-13). The seamless tile actually used is `assets/img/texture-tile.png`.
+- `readme.md` is not committed — only `README.md`, which is what we want. The two are byte-identical by construction; this project keeps both, the repo keeps one.
+- `_ds_bundle.js`, `_ds_manifest.json`, `_adherence.oxlintrc.json` are generated every turn and committed intentionally, so file-reading agents (e.g. Claude Fable) see the compiled bundle without running the compiler. Expect them in every diff.
+- `github.md` is written by Claude after each sync, so it is always one revision behind upstream by design. It rides along with the next push.
+
+## Sync workflow
+
+Claude has read access only. To sync: ask "what's stale on GitHub?" — Claude diffs `main` against this project and reports the file list. Then export the project, replace the repo contents wholesale (never cherry-pick — partial uploads are what caused the `variables.json` / `colors.css` disagreement), and push.
 
 ## Screen map
 
@@ -47,3 +51,8 @@ Everything below is current in this project and stale in `main` as of the sync a
 | `components/{core,cards,decor}/` | self — 12 component families with `.d.ts` + `.prompt.md` + one card each |
 | `figma/` | self — `variables.json`, `text-styles.json`, `setup-plugin/`, `components.md` |
 | `thumbnail.html` | `tokens/colors.css`, `assets/marks/toccala-wordmark-cream.svg` |
+
+## Sync history
+
+- **2026-08-13T18:51:29Z** — verified push at `7e529905842f`. Brought the 11 stale files level; `uploads/` and `.gitignore` still open.
+- **2026-08-13T18:45:22Z** — read-only comparison at `922bb6e4d295`. Repo was one edit-round behind: 11 files stale, including `--lh-display:1.1` and `Semantic/Accent` → `Palette/Clay`. Resolved by the push above.

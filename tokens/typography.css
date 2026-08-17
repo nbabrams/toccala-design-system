@@ -4,7 +4,6 @@
 --font-display-cond:"Optima nova LT Pro Cond","optima-nova-lt-pro-cond","Optima nova LT Pro",Georgia,serif;
 --font-text:"Wix Madefor Text",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
 --font-script:"Seaweed Script",cursive;
---font-numeric:"Inter",-apple-system,BlinkMacSystemFont,sans-serif;
 
 --fw-display-medium:500; /* @kind font */
 --fw-display-demi:600; /* @kind font */
@@ -32,6 +31,7 @@
 --fs-plan-label:13px;
 
 --lh-display:1; /* @kind other */
+--lh-h2:1.1; /* @kind other */ /* H2 only — 110% */
 --lh-heading:1.2; /* @kind other */ /* text-face rows only (Lead); headings are flush at --lh-display */
 --lh-body:1.4; /* @kind other */
 --lh-flush:100%; /* @kind other */
@@ -46,8 +46,8 @@
 .t-display{font-family:var(--font-display-cond);font-weight:500;font-size:var(--fs-display);line-height:var(--lh-display);color:var(--text-primary)}
 .t-h1{font-family:var(--font-display-cond);font-weight:500;font-size:var(--fs-h1);line-height:var(--lh-display);color:var(--text-primary)}
 .t-h1-m{font-family:var(--font-display-cond);font-weight:500;font-size:var(--fs-h1-m);line-height:var(--lh-display);color:var(--text-primary)}
-.t-h2{font-family:var(--font-display-cond);font-weight:500;font-size:var(--fs-h2);line-height:var(--lh-display);color:var(--text-primary)}
-.t-h2-m{font-family:var(--font-display-cond);font-weight:500;font-size:var(--fs-h2-m);line-height:var(--lh-display);color:var(--text-primary)}
+.t-h2{font-family:var(--font-display-cond);font-weight:500;font-size:var(--fs-h2);line-height:var(--lh-h2);color:var(--text-primary)}
+.t-h2-m{font-family:var(--font-display-cond);font-weight:500;font-size:var(--fs-h2-m);line-height:var(--lh-h2);color:var(--text-primary)}
 .t-h3{font-family:var(--font-display-cond);font-weight:500;font-size:var(--fs-h3);line-height:var(--lh-display);color:var(--text-primary)}
 .t-h3-m{font-family:var(--font-display-cond);font-weight:500;font-size:var(--fs-h3-m);line-height:var(--lh-display);color:var(--text-primary)}
 .t-h4{font-family:var(--font-display-cond);font-weight:500;font-size:var(--fs-h4);line-height:var(--lh-display);color:var(--text-primary)}
