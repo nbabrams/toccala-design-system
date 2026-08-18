@@ -17,7 +17,7 @@
 --fs-h2:56px;      --fs-h2-m:42px;
 --fs-h3:48px;      --fs-h3-m:36px;
 --fs-h4:40px;      --fs-h4-m:32px;
---fs-h5:32px;
+--fs-h5:32px;      --fs-h5-m:28px;
 --fs-h6:18px;
 --fs-lead:24px;    --fs-lead-m:20px;
 --fs-body-l:20px;  --fs-body-l-m:18px;
@@ -31,7 +31,8 @@
 --fs-plan-label:13px;
 
 --lh-display:1; /* @kind other */
---lh-h2:1.1; /* @kind other */ /* H2 only — 110% */
+--lh-tight:1.1; /* @kind other */ /* 110% — H2 and H5 Mobile */
+--lh-h2:var(--lh-tight); /* @kind other */
 --lh-heading:1.2; /* @kind other */ /* text-face rows only (Lead); headings are flush at --lh-display */
 --lh-body:1.4; /* @kind other */
 --lh-flush:100%; /* @kind other */
@@ -53,6 +54,7 @@
 .t-h4{font-family:var(--font-display-cond);font-weight:500;font-size:var(--fs-h4);line-height:var(--lh-display);color:var(--text-primary)}
 .t-h4-m{font-family:var(--font-display-cond);font-weight:500;font-size:var(--fs-h4-m);line-height:var(--lh-display);color:var(--text-primary)}
 .t-h5{font-family:var(--font-display-cond);font-weight:500;font-size:var(--fs-h5);line-height:var(--lh-display);color:var(--text-primary)}
+.t-h5-m{font-family:var(--font-display-cond);font-weight:500;font-size:var(--fs-h5-m);line-height:var(--lh-tight);color:var(--text-primary)}
 .t-h6{font-family:var(--font-display);font-weight:600;font-size:var(--fs-h6);line-height:var(--lh-display);letter-spacing:var(--ls-h6);text-transform:uppercase;color:var(--text-kicker)}
 .t-lead{font-family:var(--font-text);font-weight:500;font-size:var(--fs-lead);line-height:var(--lh-heading);color:var(--text-primary)}
 .t-lead-m{font-family:var(--font-text);font-weight:500;font-size:var(--fs-lead-m);line-height:var(--lh-body);color:var(--text-primary)}

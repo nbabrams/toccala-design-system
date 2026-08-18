@@ -74,7 +74,7 @@ Only four ground/ink pairings are legal — see the **Semantic pairings** card. 
 ### Type
 Three faces, three jobs, no exceptions.
 
-- **Display: Optima nova LT Pro**. The whole heading ladder Display→H5 — **112 / 72 / 56 / 48 / 40 / 32** desktop, **48 / 42 / 36 / 32** mobile — is set in the **Medium Condensed** cut (`--font-display-cond`), which is what the source file uses. The price (54) and the 120px step numerals are condensed too. Only the **H6 eyebrow (18, Demi)** uses the regular width via `--font-display`. Flared humanist stems, and **flush `100%` leading** at every heading size — lines stack tight, with no extra air between them.
+- **Display: Optima nova LT Pro**. The whole heading ladder Display→H5 — **112 / 72 / 56 / 48 / 40 / 32** desktop, **48 / 42 / 36 / 32 / 28** mobile — is set in the **Medium Condensed** cut (`--font-display-cond`), which is what the source file uses. The price (54) and the 120px step numerals are condensed too. Only the **H6 eyebrow (18, Demi)** uses the regular width via `--font-display`. Flared humanist stems, and **flush `100%` leading** at every heading size — lines stack tight, with no extra air between them.
 - **Text: Wix Madefor Text** (Medium 500 mostly, SemiBold 600 for micro-labels). All body copy, buttons, links, feature lines. Leading `1.4`. Scale: 24 / 20 / 18 / 16 / 14 / 12. **Every button label is 18** (Body L) at every size.
 - **Script: Seaweed Script** (Regular 400, 24–34px). Accents only. Never a heading, never body.
 

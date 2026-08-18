@@ -613,6 +613,20 @@ const STYLES = {
       }
     },
     {
+      "name": "Heading/H5 Mobile",
+      "fontFamily": "Optima nova LT Pro",
+      "fontStyle": "Medium Condensed",
+      "fontSize": 28,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 110
+      },
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      }
+    },
+    {
       "name": "Heading/H5",
       "fontFamily": "Optima nova LT Pro",
       "fontStyle": "Medium Condensed",
